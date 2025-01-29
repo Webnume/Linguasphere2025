@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  } 
+} */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+main ul {
+  list-style-image: url(/images/puce.png);
+}
+main article:not(#banner) ul li {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+form label {
+  font-weight: bolder;
+  color: rgb(153, 153, 153);
+}
+input,
+select,
+textarea {
+  border: solid 1px rgb(153, 153, 153);
+  border-radius: 5px;
+  padding: 5px;
+}
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+h3 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #90bd0e;
+}
+/* *{
+  border: solid 1px red;
+} */
