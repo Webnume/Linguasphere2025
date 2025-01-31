@@ -22,28 +22,28 @@ export default function H2({
       {withIcon ? (
         <div className="flex flex-row items-center">
           {withIcon === "IoMicCircleSharp" && (
-            <IoMicCircleSharp size="4.5rem" className="text-blue" />
+            <IoMicCircleSharp size="2.5rem" className="text-blue" />
           )}
           {withIcon === "FaLinesLeaning " && (
-            <FaLinesLeaning size="4.5rem" className="text-blue" />
+            <FaLinesLeaning size="2.5rem" className="text-blue" />
           )}
           {withIcon === "MdDone" && (
-            <MdDone size="4.5rem" className="text-blue" />
+            <MdDone size="2.5rem" className="text-blue" />
           )}
           {withIcon === "FaGraduationCap" && (
-            <FaGraduationCap size="4.5rem" className="text-blue" />
+            <FaGraduationCap size="2.5rem" className="text-blue" />
           )}
           {withIcon === "FaDiscourse" && (
-            <FaDiscourse size="4.5rem" className="text-blue" />
+            <FaDiscourse size="2.5rem" className="text-blue" />
           )}
           {withIcon === "BsArrowCounterclockwise" && (
-            <BsArrowCounterclockwise size="4.5rem" className="text-blue" />
+            <BsArrowCounterclockwise size="2.5rem" className="text-blue" />
           )}
           {withIcon === "FaCommentMedical" && (
-            <FaCommentMedical size="4.5rem" className="text-blue" />
+            <FaCommentMedical size="2.5rem" className="text-blue" />
           )}
           {withIcon === "FaGavel" && (
-            <FaGavel size="4.5rem" className="text-blue" />
+            <FaGavel size="2.5rem" className="text-blue" />
           )}          
           <h2 className="md:text-xl text-blue p-2 w-fit  border-orange">
             {children}
