@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { contentData } from "../data/contentData";
 import { FaBalanceScale, FaRegThumbsUp, FaPen } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa6";
 
 export default function ListCardMini() {
   return (
@@ -30,6 +31,9 @@ export default function ListCardMini() {
                 )}
                 {categorie.name === "Rédaction" && (
                   <FaPen className="text-6xl text-blue group-hover:text-orange" />
+                )}
+                {categorie.name === "Formation à la traduction juridique" && (
+                  <FaGraduationCap className="text-6xl text-blue group-hover:text-orange" />
                 )}
                 <h2 className="uppercase font-semibold text-blue group-hover:text-orange">
                   {categorie.name ===
