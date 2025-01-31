@@ -56,27 +56,27 @@ export const contentData = [
               <li>
                 Programmes de lutte contre les crimes et délits financiers
                 <ul>
-                  <li>"Corruption"</li>
-                  <li>"Fraude"</li>
-                  <li>"Délit d’initiés"</li>
-                  <li>"Blanchiment de capitaux"</li>
-                  <li>"Financement du terrorisme"</li>
+                  <li>Corruption</li>
+                  <li>Fraude</li>
+                  <li>Délit d’initiés</li>
+                  <li>Blanchiment de capitaux</li>
+                  <li>Financement du terrorisme</li>
                 </ul>
               </li>
               <li>
                 Politiques de l’entreprise
                 <ul>
-                  <li>"Confidentialité"</li>
+                  <li>Confidentialité</li>
                   <li>
-                    "gestion des données personnelles et respect de la vie
-                    privée"
+                    Données personnelles et respect de la vie
+                    privée
                   </li>
-                  <li>"Gestion des conflits d’intérêts"</li>
-                  <li>"Alerte professionnelle"</li>
-                  <li>"Sanctions internationales"</li>
-                  <li>"Concurrence"</li>
-                  <li>"Prévention des risques"</li>
-                  <li>"Frais, invitations et cadeaux"</li>
+                  <li>Conflits d’intérêts</li>
+                  <li>Alerte professionnelle</li>
+                  <li>Sanctions internationales</li>
+                  <li>Concurrence</li>
+                  <li>Prévention des risques</li>
+                  <li>Frais, invitations et cadeaux</li>
                 </ul>
               </li>
               <li>Supports de formation et de communication</li>.
@@ -167,51 +167,6 @@ export const contentData = [
               <li>Pages et sites Web</li>
               <li>Supports de formation</li>
               <li>Notes et politiques internes</li>
-            </ul>
-          </section>
-        ),
-      },
-      {
-        name: "Assurance",
-        image: {
-          src: "/images/_88eabc51-b6e6-4c37-b1f7-164d332c2aee.jpg",
-          alt: "écran pc portable cassé",
-        },
-        linkHref: "/expertises-dans-les-domaines-du-droit/assurance",
-        predescription: "",
-        description: <></>,
-        details: <></>,
-        page: (
-          <section className="flex flex-col items-center sm:flex-row mb-20">
-            <ul>
-              <li>Conditions générales</li>
-              <li>Conditions particulières</li>
-            </ul>
-          </section>
-        ),
-      },
-      {
-        name: "Propriété intellectuelle",
-        image: {
-          src: "/images/_c53f519d-e3ef-40c0-b57b-aeb35a90cd9c.jpg",
-          alt: "clavier pc portable défectueux",
-        },
-        linkHref:
-          "/expertises-dans-les-domaines-du-droit/propriete-intellectuelle",
-        predescription: "",
-        description: <></>,
-        details: <></>,
-        page: (
-          <section className="flex flex-col items-center sm:flex-row mb-20">
-            <ul>
-              <li>
-                Contrats de cession ou de licence de droits de propriété
-                intellectuelle
-              </li>
-              <li>
-                Dossiers contentieux portant sur le droit des marques ou le
-                droit d’auteur
-              </li>
             </ul>
           </section>
         ),
