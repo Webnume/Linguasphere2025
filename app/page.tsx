@@ -20,7 +20,7 @@ export default function Home() {
         <h2 className="text-xl sm:text-2xl text-center w-full p-4 lg:p-8">
           Services linguistiques spécialisés dans le domaine juridique, pour les
           professionnels du droit, de la conformité et de la communication
-          multilingue, depuis plus de 10 ans.
+          multilingue, depuis 2005.
         </h2>
         <p>
           Choisissez un partenaire linguistique qui connaît votre métier et ses
