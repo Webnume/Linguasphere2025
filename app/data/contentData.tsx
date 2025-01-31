@@ -263,23 +263,23 @@ export const contentData = [
   },
   {
     categoryID: 3,
-    name: "Révision de traductions juridiques",
+    name: "Révision",
     image: {
       src: "/images/_7b0e784e-9b15-4d30-bf14-9b8724428bae.jpg",
       alt: "Maintenance informatique",
     },
-    description: "Révision de traductions juridiques",
-    linkHref: "/revision-de-traductions-juridiques",
+    description: "Révision",
+    linkHref: "/revision",
     linkNameMainMenu: "Révision",
     keywords: ["optimisation de l'ordinateur", "optimsation des performances"],
     content: [
       {
-        name: "Révision de traductions juridiques",
+        name: "Révision",
         image: {
           src: "/images/_cc6b712f-3bb2-4b2e-88f0-06028301d35d.jpg",
           alt: "virus",
         },
-        linkHref: "/revision-de-traductions-juridiques",
+        linkHref: "/revision",
         predescription: "",
         description: <></>,
         details: <></>,
@@ -334,7 +334,7 @@ export const contentData = [
   },
   {
     categoryID: 4,
-    name: "Rédaction juridique",
+    name: "Rédaction",
     image: {
       src: "/images/_d1277747-0688-460b-9fd7-0bdb869b59bc.jpg",
       alt: "Récupération de données",
@@ -346,11 +346,11 @@ export const contentData = [
       "sauvegarde de fichiers",
       "sauvegarde de documents",
     ],
-    linkHref: "/redaction-juridique",
+    linkHref: "/redaction",
     linkNameMainMenu: "Rédaction",
     content: [
       {
-        name: "Rédaction juridique",
+        name: "Rédaction",
         predescription: "",
         details: <></>,
         image: {

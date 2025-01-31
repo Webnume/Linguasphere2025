@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function Révision() {
    return (
      <DetailsPage 
-       currentCategory={"Révision de traductions juridiques"}
-       currentService={"Révision de traductions juridiques"}
+       currentCategory={"Révision"}
+       currentService={"Révision"}
      />
    );
 }

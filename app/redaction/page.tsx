@@ -11,8 +11,8 @@ export default function RecuperationDonnees() {
   return (
     <>
       <DetailsPage
-      currentCategory={"Rédaction juridique"}
-      currentService={"Rédaction juridique"}
+      currentCategory={"Rédaction"}
+      currentService={"Rédaction"}
       NoReturnButton
     />
     </>
