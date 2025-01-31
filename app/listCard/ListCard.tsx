@@ -9,8 +9,8 @@ interface Service {
   name: string;
   image: { src: string; alt: string };
   linkHref?: string;
-  predescription: JSX.Element;
-  description: JSX.Element;
+  predescription?: JSX.Element | string;
+  description?: JSX.Element | string;
   details: JSX.Element;
   page?: JSX.Element;
 }
