@@ -491,8 +491,8 @@ export const contentData = [
             <section className="mb-10">
               <H2 withIcon={"FaCommentMedical"}>Votre bénéfice</H2>
               <ul>
-                <li>maîtrise des fondamentaux</li>
-                <li>gain d’autonomie et d’aisance</li>
+                <li>Maîtrise des fondamentaux</li>
+                <li>Gain d’autonomie et d’aisance</li>
               </ul>
               <span>
                 pour comprendre, traduire et rédiger des écrits juridiques en
