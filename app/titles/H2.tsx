@@ -45,7 +45,7 @@ export default function H2({
           {withIcon === "FaGavel" && (
             <FaGavel size="4.5rem" className="text-blue" />
           )}          
-          <h2 className="md:text-xl text-orange p-2 w-fit  border-gray-200">
+          <h2 className="md:text-xl text-blue p-2 w-fit  border-orange">
             {children}
           </h2>
         </div>
