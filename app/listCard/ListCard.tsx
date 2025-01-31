@@ -118,7 +118,7 @@ export default function ListCard({
           )}
           <Link
             className="bg-gray-700 text-white hover:bg-orange p-2 ml-5 rounded-b-xl cursor-pointer transition ease-in-out duration-500"
-            href="/contact-informatique-montpellier"
+            href="/contact-traduction-juridique"
             rel="noreferrer"
           >
             CONTACTEZ-NOUS
