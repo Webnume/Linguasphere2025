@@ -25,13 +25,13 @@ export default function H2({
             <IoMicCircleSharp size="3.5rem" className="text-blue" />
           )}
           {withIcon === "FaLinesLeaning " && (
-            <FaLinesLeaning size="3.5rem" className="text-blue" />
+            <FaLinesLeaning size="2.5rem" className="text-blue" />
           )}
           {withIcon === "MdDone" && (
             <MdDone size="3rem" className="text-blue" />
           )}
           {withIcon === "FaGraduationCap" && (
-            <FaGraduationCap size="3.5rem" className="text-blue" />
+            <FaGraduationCap size="3rem" className="text-blue" />
           )}
           {withIcon === "FaDiscourse" && (
             <FaDiscourse size="3.5rem" className="text-blue" />
@@ -43,7 +43,7 @@ export default function H2({
             <FaCommentMedical size="2.8rem" className="text-blue" />
           )}
           {withIcon === "FaGavel" && (
-            <FaGavel size="3.5rem" className="text-blue" />
+            <FaGavel size="2.8rem" className="text-blue" />
           )}
           <h2 className="md:text-xl text-blue p-2 w-fit  border-orange">
             {children}

@@ -592,10 +592,6 @@ export const contentData = [
                   >
                     code de déontologie
                   </Link>
-                </li>
-                <li>
-                  Membre associée de l’Association française des juristes
-                  d’entreprise
                   <ul>
                     <li>Respect des règles de l’art</li>
                     <li>Secret professionnel</li>
