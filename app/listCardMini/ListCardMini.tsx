@@ -12,7 +12,7 @@ export default function ListCardMini() {
           categorie.name !== "À propos" &&
           categorie.image && (
             <Link href={categorie.linkHref} key={categorie.name}>
-              <article className="group sm:flex sm:flex-col border border-blue sm:max-w-[280px] p-4 h-full hover:border-orange hover:border-1 hover:scale-105 transition ease-in-out items-center">
+              <article className="group sm:flex sm:flex-col border border-blue sm:max-w-[280px] p-4 h-full hover:border-orange hover:border-1 hover:scale-105 transition ease-in-out items-center gap-4">
                 {/* <Image
                   src={categorie.image?.src}
                   alt={categorie.image?.alt}
@@ -35,7 +35,7 @@ export default function ListCardMini() {
                 {categorie.name === "Formation à la traduction juridique" && (
                   <FaGraduationCap className="text-6xl text-blue group-hover:text-orange" />
                 )}
-                <h2 className="uppercase font-semibold text-blue group-hover:text-orange">
+                <h2 className="font-semibold text-blue group-hover:text-orange">
                   {categorie.name ===
                   "Traduction juridique anglais-espagnol vers le français"
                     ? "Traduction"
