@@ -28,7 +28,7 @@ export default function H2({
             <FaLinesLeaning size="3.5rem" className="text-blue" />
           )}
           {withIcon === "MdDone" && (
-            <MdDone size="3.5rem" className="text-blue" />
+            <MdDone size="3rem" className="text-blue" />
           )}
           {withIcon === "FaGraduationCap" && (
             <FaGraduationCap size="3.5rem" className="text-blue" />
@@ -37,14 +37,14 @@ export default function H2({
             <FaDiscourse size="3.5rem" className="text-blue" />
           )}
           {withIcon === "BsArrowCounterclockwise" && (
-            <BsArrowCounterclockwise size="3.5rem" className="text-blue" />
+            <BsArrowCounterclockwise size="3.2rem" className="text-blue" />
           )}
           {withIcon === "FaCommentMedical" && (
-            <FaCommentMedical size="3.5rem" className="text-blue" />
+            <FaCommentMedical size="2.8rem" className="text-blue" />
           )}
           {withIcon === "FaGavel" && (
             <FaGavel size="3.5rem" className="text-blue" />
-          )}          
+          )}
           <h2 className="md:text-xl text-blue p-2 w-fit  border-orange">
             {children}
           </h2>
