@@ -16,7 +16,7 @@ export default function Contact() {
       <Banner title={"Contact et demande de devis"} />
       <Avantages />
       <section className="md:p-6 p-2 max-w-[1000px] flex flex-col">
-        <span className="font-bold text-lg text-green border-2 border-green p-2 text-center">
+        <span className="font-bold text-lg text-orange border-2 border-orange p-2 text-center">
           PCnumerik intervient uniquement{" "}
           <span className="text-gray-700">sur rendez-vous</span>
         </span>

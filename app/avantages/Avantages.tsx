@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Avantages() {
   return (
-    <ul className="bg-green md:rounded-md py-2 px-8 list-disc ">
+    <ul className="bg-orange md:rounded-md py-2 px-8 list-disc ">
       <li>Aucune facturation horaire.</li>
       <li>Intervention garantie 30j.</li>
       <li>Devis en ligne gratuit.</li>

@@ -17,8 +17,8 @@ const config: Config = {
         700:"#333",
         900: "#1a202c",
       },
-      green:"#90bd0e",
-      orange:"#c45A17"
+      orange:"#E85F0C",
+      blue:"#00679A"
     },
     extend: {
       backgroundImage: {

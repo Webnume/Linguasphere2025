@@ -16,7 +16,7 @@ const Logout = () => {
     }
   };
 
-  return <button className="p-2 border-4 border-green rounded-md" onClick={handleLogout}>Logout</button>;
+  return <button className="p-2 border-4 border-orange rounded-md" onClick={handleLogout}>Logout</button>;
 };
 
 export default Logout;

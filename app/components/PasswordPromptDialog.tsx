@@ -35,7 +35,7 @@ const PasswordPromptDialog = ({ onSubmit }: any) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button className="p-2 m-4 border-4 border-green rounded-md"  type="submit" disabled={loading}>
+        <button className="p-2 m-4 border-4 border-orange rounded-md"  type="submit" disabled={loading}>
           Submit
         </button>
         {passwordIncorrect && <p>Password is incorrect</p>}

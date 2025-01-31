@@ -268,7 +268,7 @@ export const contentData = [
       src: "/images/_7b0e784e-9b15-4d30-bf14-9b8724428bae.jpg",
       alt: "Maintenance informatique",
     },
-    description: "Révision",
+    description: "Contrôler la qualité d’une traduction ou d’un écrit juridique.",
     linkHref: "/revision",
     linkNameMainMenu: "Révision",
     keywords: ["optimisation de l'ordinateur", "optimsation des performances"],
@@ -584,7 +584,7 @@ export const contentData = [
                   Membre titulaire de la Société française des traducteurs et
                   signataire de son{" "}
                   <Link
-                    className="text-green"
+                    className="text-orange"
                     href={
                       "https://www.sft.fr/global/gene/link.php?doc_id=642&fg=1"
                     }

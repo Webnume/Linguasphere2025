@@ -33,7 +33,7 @@ export default function ScrollToTop() {
 
   return (
     <button
-      className={`fixed bottom-0 right-0 bg-green rounded-lg p-2 mr-6 mb-4 z-50 items-center text-xs flex gap-2 ${
+      className={`fixed bottom-0 right-0 text-orange rounded-lg p-2 mr-6 mb-4 z-50 items-center text-xs flex gap-2 ${
         isVisible ? "opacity-100" : "opacity-0"
       }  transition ease-in-out duration-300`}
       onClick={scrollToTop}

@@ -82,7 +82,7 @@ export default function Form() {
     <>
       {message ? (
         <>
-          <p className="text-white text-xl border-green p-2 bg-green">
+          <p className="text-white text-xl border-orange p-2 bg-orange">
             {message}{" "}
           </p>
           <p>
@@ -99,8 +99,8 @@ export default function Form() {
           ref={formRef}
         >
           <section className="flex flex-col lg:flex-row gap-4 mb-8">
-            <fieldset className="p-2  border border-green m-2">
-              <legend className="text-center px-2 text-green text-xl">
+            <fieldset className="p-2  border border-orange m-2">
+              <legend className="text-center px-2 text-orange text-xl">
                 Vos coordonnées
               </legend>
               <div className="flex items-center justify-center gap-4 flex-col max-w-[1440px] p-4">
@@ -256,8 +256,8 @@ export default function Form() {
                 </div>
               </div>
             </fieldset>
-            <fieldset className="flex flex-col gap-4 p-2 border border-green m-2 h-fit">
-              <legend className="text-center px-2 text-green text-xl">
+            <fieldset className="flex flex-col gap-4 p-2 border border-orange m-2 h-fit">
+              <legend className="text-center px-2 text-orange text-xl">
                 Votre appareil
               </legend>
               <div className="flex flex-col w-full lg:w-full">
@@ -368,7 +368,7 @@ export default function Form() {
             <textarea
               id="form_message"
               {...register("message", { required: "Message obligatoire." })}
-              className="border-green"
+              className="border-orange"
               placeholder="Merci de préciser la problèmatique que vous rencontrez *"
               rows={10}
             ></textarea>
@@ -378,7 +378,7 @@ export default function Form() {
           <section className="flex flex-col items-center">
             <input
               type="submit"
-              className="p-4 bg-gray-700 hover:bg-green text-white font-semibold text-lg uppercase cursor-pointer transition ease-in-out duration-500"
+              className="p-4 bg-gray-700 hover:bg-orange text-white font-semibold text-lg uppercase cursor-pointer transition ease-in-out duration-500"
               value="Envoyez votre message"
             />
 

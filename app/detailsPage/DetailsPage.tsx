@@ -32,7 +32,7 @@ export default function detailsPage({
       {!isCategoryWithNoSubCategory && !NoReturnButton && returnButtonLink ? (
         <Link
           href={returnButtonLink}
-          className="flex items-center self-start bg-gray-200 p-1 rounded-md m-6 border-green border-[1px] cursor-pointer"
+          className="flex items-center self-start bg-gray-200 p-1 rounded-md m-6 border-orange border-[1px] cursor-pointer"
           id="returnButton"
         >
           <MdArrowBackIosNew />

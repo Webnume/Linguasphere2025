@@ -18,27 +18,22 @@ export default function Home() {
       <Banner title={"Dépannage informatique"} />
       <section className="flex flex-col w-full max-w-[1440px] p-4">
         <h2 className="text-xl sm:text-2xl text-center w-full p-4 lg:p-8">
-          Maintenance informatique, réparation d'ordinateur PC, dépannage et
-          assistance informatique pour Montpellier et sa couronne (
-          <Link
-            href={
-              "/localisation/Saint-Jean-de-Vedas-34430-depannage-informatique"
-            }
-          >
-            Saint-Jean-de-Védas
-          </Link>
-          ,{" "}
-          <Link href={"/localisation/Lattes-34970-depannage-informatique"}>
-            Lattes
-          </Link>{" "}
-          ...)
+          Services linguistiques spécialisés dans le domaine juridique, pour les
+          professionnels du droit, de la conformité et de la communication
+          multilingue, depuis plus de 10 ans.
         </h2>
-        <Avantages />
+        <p>
+          Choisissez un partenaire linguistique qui connaît votre métier et ses
+          enjeux et qui vous fera bénéficier de son savoir-faire reconnu et de
+          son expertise pluridisciplinaire (rédactionnelle, juridique et
+          linguistique). <br />
+          Linguasphere ne donne pas de conseils juridiques.
+        </p>
         <h3>Qui sommes-nous ?</h3>
         <p>
           Depuis 1998,{" "}
           <strong>
-            PC<span className="text-green">NUMERIK</span>
+            PC<span className="text-orange">NUMERIK</span>
           </strong>
           , entreprise de <strong>dépannage informatique à Montpellier</strong>,
           propose des prestations d'
@@ -83,7 +78,7 @@ export default function Home() {
           sécurité est donc une nécessité pour réduire les risques de
           défaillances critiques.{" "}
           <strong>
-            PC<span className="text-green">NUMERIK</span>
+            PC<span className="text-orange">NUMERIK</span>
           </strong>{" "}
           conseille de{" "}
           <strong>
@@ -128,7 +123,6 @@ export default function Home() {
             vos composants.
           </li>
         </ul>
-        <FaqList />
         <h3>
           L’obsolescence programmée : Ayez le bon réflexe et faites réparer
           votre ordinateur !
@@ -136,7 +130,7 @@ export default function Home() {
         <p>
           Chez{" "}
           <strong>
-            PC<span className="text-green">NUMERIK</span>
+            PC<span className="text-orange">NUMERIK</span>
           </strong>
           , spécialiste de l'informatique à Montpellier, nous avons la fibre{" "}
           <strong>écologique</strong> et nous faisons reculer la date d’
@@ -155,17 +149,6 @@ export default function Home() {
           <strong>expérience optimale et durable</strong>.
         </p>
         <br />
-        {/* <GoogleReviews /> */}
-        {/* <h3 className="flex items-center lg:text-2xl text-center w-full lg:px-[15%] bg">
-          Les étapes du dépannage informatique chez <strong>PC<span className="text-green">NUMERIK</span></strong>
-        </h3>
-        <Image
-          src="/images/processpcnumerik.png"
-          alt="logo"
-          width={750}
-          height={2295}
-          className="self-center"
-        /> */}
       </section>
     </>
   );

@@ -33,11 +33,11 @@ main ul {
 }
 
 ul li::marker {
-  color: #90bd0e;
+  color: #E85F0C;
   font-size: 1.5rem;
 }
 ul li ul li::marker {
-  color: #0313f7;
+  color: #00679A;
 }
 
 
@@ -60,14 +60,14 @@ textarea {
 .select:focus,
 .textarea:focus {
   outline: none !important;
-  border-color: #719ece;
-  box-shadow: 0 0 10px #719ece;
+  border-color: #00679A;
+  box-shadow: 0 0 10px #00679A;
 }
 h3 {
   margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: bolder;
-  color: #90bd0e;
+  color: #E85F0C;
 }
 /* *{
   border: solid 1px red;

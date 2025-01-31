@@ -14,8 +14,8 @@ export default function Faq({
     >
       <>
         <div
-          className={`flex border-gray-700 border-[1px] text-gray-700 p-2 cursor-pointer items-center justify-center content-between hover:bg-green hover:text-white hover:border-white ${
-            isActive ? "bg-green text-white" : ""
+          className={`flex border-gray-700 border-[1px] text-gray-700 p-2 cursor-pointer items-center justify-center content-between hover:bg-orange hover:text-white hover:border-white ${
+            isActive ? "bg-orange text-white" : ""
           } transition ease-in-out`}
         >
           <span className="font-semibold">{item.question}</span>

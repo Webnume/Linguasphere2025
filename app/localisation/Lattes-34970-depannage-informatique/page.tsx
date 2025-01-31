@@ -25,7 +25,7 @@ export default function Home() {
         <p>
           Depuis 1998,{" "}
           <strong>
-            PC<span className="text-green">NUMERIK</span>
+            PC<span className="text-orange">NUMERIK</span>
           </strong>
           , entreprise de <strong>dépannage informatique à Montpellier</strong>,
           propose des prestations d'
@@ -57,7 +57,7 @@ export default function Home() {
           sécurité est donc une nécessité pour réduire les risques de
           défaillances critiques.{" "}
           <strong>
-            PC<span className="text-green">NUMERIK</span>
+            PC<span className="text-orange">NUMERIK</span>
           </strong>{" "}
           conseille de{" "}
           <strong>
@@ -110,7 +110,7 @@ export default function Home() {
         <p>
           Chez{" "}
           <strong>
-            PC<span className="text-green">NUMERIK</span>
+            PC<span className="text-orange">NUMERIK</span>
           </strong>
           , spécialiste de l'informatique à Montpellier, nous avons la fibre{" "}
           <strong>écologique</strong> et nous faisons reculer la date d’
@@ -131,7 +131,7 @@ export default function Home() {
         <br />
         {/* <GoogleReviews /> */}
         {/* <h3 className="flex items-center lg:text-2xl text-center w-full lg:px-[15%] bg">
-          Les étapes du dépannage informatique chez <strong>PC<span className="text-green">NUMERIK</span></strong>
+          Les étapes du dépannage informatique chez <strong>PC<span className="text-orange">NUMERIK</span></strong>
         </h3>
         <Image
           src="/images/processpcnumerik.png"
