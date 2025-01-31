@@ -3,45 +3,102 @@ import Faq from "./Faq";
 
 const data = [
   {
-    question: <h4>Puis-je passer directement à votre boutique ?</h4>,
+    question: (
+      <h4>
+        Traduction juridique dans les couples de langues anglais-français et
+        espagnol-français
+      </h4>
+    ),
     answer: (
-      <p>
-        Non, car nous sommes une entreprise de dépannage informatique à
-        domicile. Merci de{" "}
-        <Link href="/contact-informatique-montpellier">
-          <u>prendre rendez-vous</u>
-        </Link>{" "}
-        .
-      </p>
+      <>
+        Mémentos droit(s) et langue(s)
+        <br />
+        Objectif : disposer d’un savoir-faire, d’outils et de ressources pour
+        traduire des documents liés à un domaine du droit (famille, biens,
+        sociétés, contrats) dans un couple de langues (anglais ou espagnol vers
+        le français)
+        <ul>
+          <li>Les essentiels du droit et de la terminologie </li>
+          <li>Étude comparative des concepts et du langage juridiques</li>
+          <li>Analyse juridique et linguistique de clauses types</li>
+          <li>Atelier de traduction/révision</li>
+          <li>
+            Constitution d’une boîte à outils (lexique/glossaire spécialisé ;
+            clausier bilingue spécialisé ; livret de documentation ; guide des
+            ressources)
+          </li>
+        </ul>
+        Les fondamentaux de la traduction juridique
+        <br />
+        Objectif : disposer d’un savoir-faire, d’outils et de ressources pour
+        traduire des documents juridiques simples.
+        <ul>
+          <li>
+            Typologie des textes juridiques : avoir une vue d’ensemble des
+            sources et des branches du droit pour identifier les différents
+            textes juridiques
+          </li>
+          <li>
+            ABC des grands systèmes de droit : avoir un panorama des grandes
+            familles juridiques
+          </li>
+          <li>
+            ABC du langage juridique (AN, ES, FR) : connaître les spécificités
+            du langage juridique pour comprendre les principaux types de
+            documents juridiques
+          </li>
+          <li>
+            {" "}
+            Spécificités de la traduction juridique : étude et analyse des
+            particularités de la traduction du droit (difficultés et solutions){" "}
+          </li>
+          <li>Mémento qualité : liste de points de vérification</li>
+          <li>
+            Guide des ressources : liste de ressources et étude de leur
+            pertinence
+          </li>
+        </ul>
+      </>
     ),
   },
   {
-    question: <h4>Combien de temps pour un rendez-vous ?</h4>,
+    question: <h4>Français juridique</h4>,
     answer: (
-      <p>
-        Nous intervenons généralement 24 h après votre prise de rendez-vous que
-        vous choisirez selon vos disponibilités.
-      </p>
+      <>
+        Les fondamentaux de la culture et du langage juridiques
+        <br />
+        Objectif : disposer d’un savoir-faire, d’outils et de ressources pour
+        comprendre et rédiger en français des documents juridiques simples
+        <ul>
+          <li>
+            Typologie des textes juridiques : avoir une vue d’ensemble des
+            sources et des branches du droit pour identifier les différents
+            textes juridiques
+          </li>
+          <li>
+            ABC du système de droit français : avoir un panorama des
+            institutions et des acteurs judiciaires français
+          </li>
+          <li>
+            ABC du langage juridique : connaître les spécificités du français du
+            droit pour comprendre les principaux types de documents juridiques
+          </li>
+          <li>Atelier compréhension/rédaction</li>
+          <li>
+            Guide des ressources : liste de ressources et étude de leur
+            pertinence
+          </li>
+        </ul>
+      </>
     ),
   },
   {
     question: (
-      <h4>Quels sont les délais de réparation informatique en atelier ?</h4>
+      <h4>Formations spécialisées sur mesure</h4>
     ),
     answer: (
       <p>
-        Tout dépend de la complexité de la panne. Le délai moyen constaté est de
-        48 h, entre le retrait et le retour de votre matériel.
-      </p>
-    ),
-  },
-  {
-    question: (
-      <h4>Le diagnostic et les déplacements à domicile sont-ils gratuits ?</h4>
-    ),
-    answer: (
-      <p>
-        Oui, mais uniquement en cas d'acceptation du devis d'intervention. Ce coût sera déduit du reste à payer. Demandez un <Link href="/contact-informatique-montpellier"><u>devis gratuitement</u></Link>.
+        Conception de formations adaptées à vos besoins.
       </p>
     ),
   },
@@ -50,10 +107,6 @@ const data = [
 export default function FaqList() {
   return (
     <section className="flex flex-col mb-4">
-      <h3>
-        F.A.Q. sur nos services de dépannage informatique et de réparation
-        d'ordinateur
-      </h3>
       {data.map((item, i) => (
         <Faq key={i} item={item} />
       ))}

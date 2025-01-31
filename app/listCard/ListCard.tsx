@@ -12,8 +12,7 @@ interface Service {
   predescription: JSX.Element;
   description: JSX.Element;
   details: JSX.Element;
-  price: number;
-  priceMessage: string;
+  page?: JSX.Element;
 }
 
 export default function ListCard({
@@ -41,7 +40,11 @@ export default function ListCard({
   );
 
   return (
-    <section className="flex flex-col items-center sm:flex-row mb-20">
+    <section
+      className={`flex flex-col items-center sm:flex-row mb-20 
+    ${detailPage ? "" : "w-[47%]"}
+    `}
+    >
       <div className="flex flex-col w-full" id={service.name}>
         {!detailPage ? (
           <Link href={service.linkHref ? service.linkHref : `#${service.name}`}>
@@ -51,7 +54,7 @@ export default function ListCard({
           <H2>{service.name}</H2>
         )}
         <div className="shadow-md shadow-gray-700 p-5 ">
-          {!detailPage ? (
+          {/* {!detailPage ? (
             <Link
               href={service.linkHref ? service.linkHref : `#${service.name}`}
             >
@@ -59,14 +62,36 @@ export default function ListCard({
             </Link>
           ) : (
             image
-          )}
+          )} */}
           <section className="pt-2 sm:pt-0 sm:pl-5">
-            {service.predescription}
-            <br />
-            <br />
+            {service.predescription ? (
+              <>
+                {service.predescription}
+                <br />
+                <br />
+              </>
+            ) : (
+              <></>
+            )}
+            {service.description ? (
+              <>
+                {service.description} <br />
+              </>
+            ) : (
+              <></>
+            )}
             {service.description}
-            <br />
-            {detailPage || isActive ? service.details : ""}
+
+            {detailPage || isActive ? (
+              <>
+                {" "}
+                {service.details} <br />{" "}
+              </>
+            ) : (
+              <></>
+            )}
+
+            {service.page ? service.page : <></>}
           </section>
         </div>
         <section className="flex justify-end items-start text-base text-white list-image-none">
@@ -98,11 +123,7 @@ export default function ListCard({
           >
             CONTACTEZ-NOUS
           </Link>
-          <span className=" bg-orange p-2 w-fit rounded-b-xl ml-5 ">
-            {service.price === -1 ? "SUR DEVIS" : `${service.price} € TTC*`}
-          </span>
         </section>
-        <span className="text-orange self-end">{service.priceMessage}</span>
       </div>
     </section>
   );

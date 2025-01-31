@@ -29,7 +29,7 @@ const Header = () => {
   });
   return (
     <section
-      className={`flex justify-around z-50 items-center w-full h-20 text-gray-700 bg-gray-200 nav py-20 ${
+      className={`flex justify-around z-50 items-center w-full h-20 text-gray-700 bg-white nav py-20 ${
         visible
           ? " flex justify-between items-center sticky opacity-100 top-0 h-40"
           : ""
@@ -50,8 +50,8 @@ const Header = () => {
           <Image
             src="/images/logo-linguasphere-255px.png"
             alt="logo"
-            width={330}
-            height={83}
+            width={255}
+            height={101}
           />
         </Link>
 

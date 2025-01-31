@@ -28,8 +28,19 @@ body {
     rgb(var(--background-start-rgb));
 }
 main ul {
-  list-style-image: url(/images/puce.png);
+  /* list-style-image: url(/images/puce.png); */
+  list-style-type: square;
 }
+
+ul li::marker {
+  color: #90bd0e;
+  font-size: 1.5rem;
+}
+ul li ul li::marker {
+  color: #0313f7;
+}
+
+
 main article:not(#banner) ul li {
   margin-top: 1rem;
   margin-left: 2rem;

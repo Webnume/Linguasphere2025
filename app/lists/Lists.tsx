@@ -8,7 +8,7 @@ export default function Lists({ type }: { type: string }) {
   const data = contentData.find((content) => content.name === type);
 
   return (
-    <article className="md:p-6 p-2 max-w-[1440px]">
+    <article className="md:p-6 p-2 max-w-[1440px] flex flex-wrap items-start justify-around w-full">
       {data?.content?.map((service) => (
         <ListCard key={service.name} service={service} />
       ))}
