@@ -10,8 +10,6 @@ export default function Form() {
     societe: string;
     name: string;
     surname: string;
-    address: string;
-    codepostal: string;
     email: string;
     phone: string;
     appareil: string;
@@ -35,8 +33,6 @@ export default function Form() {
       societe: "",
       name: "",
       surname: "",
-      address: "",
-      codepostal: "",
       email: "",
       phone: "",
       appareil: "",
@@ -192,38 +188,6 @@ export default function Form() {
                 </div>
 
                 <div className="flex flex-col w-full lg:w-full">
-                  <label htmlFor="form_adresse">
-                    Numéro de voie et adresse *
-                  </label>
-                  <input
-                    id="form_adresse"
-                    type="text"
-                    {...register("address", {
-                      required: "Adresse obligatoire pour fixer un devis.",
-                    })}
-                    className="form-control"
-                    placeholder="ex : 1 rue de la Paix *"
-                  />
-                  <p className="text-orange">{errors.address?.message}</p>
-                </div>
-
-                <div className="flex flex-col w-full lg:w-full">
-                  <label htmlFor="form_codepostal">Code postal *</label>
-                  <input
-                    id="form_codepostal"
-                    type="tel"
-                    {...register("codepostal", {
-                      required: "Code postal obligatoire.",
-                      minLength: 5,
-                      maxLength: 5,
-                    })}
-                    className="form-control"
-                    placeholder="ex : 34070"
-                  />
-                  <p className="text-orange">{errors.codepostal?.message}</p>
-                </div>
-
-                <div className="flex flex-col w-full lg:w-full">
                   <label htmlFor="form_email">Email *</label>
                   <input
                     id="form_email"
@@ -256,124 +220,19 @@ export default function Form() {
                 </div>
               </div>
             </fieldset>
-            <fieldset className="flex flex-col gap-4 p-2 border border-orange m-2 h-fit">
-              <legend className="text-center px-2 text-orange text-xl">
-                Votre appareil
-              </legend>
-              <div className="flex flex-col w-full lg:w-full">
-                <label htmlFor="form_appareil">Type d'appareil *</label>
-                <select
-                  className="form-control"
-                  id="form_appareil"
-                  {...register("appareil", {
-                    required: "Appareil obligatoire",
-                  })}
-                >
-                  <option value="">Aucun</option>
-                  <option value="Ordinateur portable">
-                    Ordinateur portable
-                  </option>
-                  <option value="Ordinateur de bureau (tour)">
-                    Ordinateur de bureau (tour classique)
-                  </option>
-                  <option value="Ordinateur de bureau (gros format type GAMER)">
-                    Ordinateur de bureau (tour Gamer)
-                  </option>
-                  <option value="Ordinateur de bureau tout-en-un">
-                    Ordinateur de bureau (tout-en-un)
-                  </option>
-                  <option value="Autre matériel informatique">
-                    Autre matériel informatique
-                  </option>
-                </select>
-                <p className="text-orange">{errors.appareil?.message}</p>
-              </div>
-              <div className="flex flex-col w-full lg:w-full">
-                <label htmlFor="form_marque">Marque *</label>
-                <input
-                  id="form_marque"
-                  type="text"
-                  {...register("marque", {
-                    required: 'Marque obligatoire ou mettre "Inconnue".',
-                  })}
-                  className="form-control"
-                  placeholder="ex : HP, Samsung, Acer *"
-                />
-                <p className="text-orange">{errors.marque?.message}</p>
-              </div>
-              <div className="flex flex-col w-full lg:w-full">
-                <label htmlFor="form_Modele">Modèle *</label>
-                <input
-                  id="form_Modele"
-                  type="text"
-                  {...register("modele", {
-                    required: 'Modèle obligatoire ou mettre "Inconnu".',
-                  })}
-                  className="form-control"
-                  placeholder="ex : Zenbook 14, Pavilion Plus 14-eh1008nf *"
-                />
-                <p className="text-orange">{errors.modele?.message}</p>
-              </div>
-              <div className="flex flex-col w-full">
-                <label htmlFor="form_systeme">
-                  Votre appareil fonctionne avec *
-                </label>
-                <select
-                  className="form-control"
-                  id="form_systeme"
-                  {...register("systeme", { required: "Système obligatoire" })}
-                >
-                  <option value="">Aucun</option>
-                  <option value="Windows 11">Windows 11</option>
-                  <option value="Windows 10">Windows 10</option>
-                  <option value="Windows 8 ou 8.1">Windows 8 ou 8.1</option>
-                  <option value="Windows 7">Windows 7</option>
-                  <option value="macOS">macOS</option>
-                  <option value="A déterminer">Je ne sais pas</option>
-                </select>
-                <p className="text-orange">{errors.systeme?.message}</p>
-              </div>
-              <div className="col-lg-6">
-                <label>
-                  Option : Avez-vous des données à récupérer *
-                  <br />
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    {...register("donnees", { required: "Option obligatoire" })}
-                    id="oui"
-                    value="oui"
-                  />
-                </label>
-                <label className="font-normal m-2" htmlFor="oui">
-                  Oui
-                </label>
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  {...register("donnees", { required: "Option obligatoire" })}
-                  id="non"
-                  value="non"
-                />
-                <label className="font-normal m-2" htmlFor="non">
-                  Non
-                </label>
-                <p className="text-orange">{errors.donnees?.message}</p>
-              </div>
-            </fieldset>
-          </section>
-
-          <div className="flex flex-col w-full max-w-[900px] p-2 mb-8">
+          <div className="flex flex-col w-full max-w-[900px] p-2 mb-8 ">
             <label htmlFor="form_message">Message *</label>
             <textarea
               id="form_message"
               {...register("message", { required: "Message obligatoire." })}
-              className="border-orange"
+              className="border-orange  min-h-[420px]"
               placeholder="Merci de préciser la problèmatique que vous rencontrez *"
-              rows={10}
+              rows={10} 
             ></textarea>
             <p className="text-orange">{errors.message?.message}</p>
           </div>
+          </section>
+
 
           <section className="flex flex-col items-center">
             <input

@@ -614,7 +614,7 @@ export const contentData = [
     name: "contact",
     description: "Contact du site",
     keywords: ["contact"],
-    linkHref: "/contact-informatique-montpellier",
+    linkHref: "/contact-traduction-juridique",
     linkNameMainMenu: "contact",
   },
 ];
