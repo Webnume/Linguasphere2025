@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import H2 from "../titles/H2";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { IoIosArrowDropup, IoIosArrowDropdown } from "react-icons/io";
 
@@ -23,21 +23,21 @@ export default function ListCard({
   detailPage?: boolean;
 }) {
   const [isActive, setIsActive] = useState(false);
-  const image = (
-    <Image
-      src={service.image.src}
-      alt={service.image.alt}
-      width={detailPage || isActive ? 360 : 232}
-      height={detailPage || isActive ? 360 : 232}
-      className={`mr-8 sm:float-left rounded-xl 
-            ${
-              detailPage || isActive
-                ? "md:max-w-[360px] md:max-h-[360px]"
-                : "max-w-[232px] max-h-[232px]"
-            }
-             `}
-    />
-  );
+  // const image = (
+  //   <Image
+  //     src={service.image.src}
+  //     alt={service.image.alt}
+  //     width={detailPage || isActive ? 360 : 232}
+  //     height={detailPage || isActive ? 360 : 232}
+  //     className={`mr-8 sm:float-left rounded-xl 
+  //           ${
+  //             detailPage || isActive
+  //               ? "md:max-w-[360px] md:max-h-[360px]"
+  //               : "max-w-[232px] max-h-[232px]"
+  //           }
+  //            `}
+  //   />
+  // );
 
   return (
     <section
@@ -54,15 +54,6 @@ export default function ListCard({
           <H2>{service.name}</H2>
         )}
         <div className="shadow-md shadow-gray-700 p-5 ">
-          {/* {!detailPage ? (
-            <Link
-              href={service.linkHref ? service.linkHref : `#${service.name}`}
-            >
-              {image}
-            </Link>
-          ) : (
-            image
-          )} */}
           <section className="pt-2 sm:pt-0 sm:pl-5">
             {service.predescription ? (
               <>
