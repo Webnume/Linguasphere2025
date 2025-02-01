@@ -32,8 +32,8 @@ const data = [
           Les fondamentaux de la traduction juridique
         </div>
         <br />
-        <b>Objectif</b> : disposer d’un savoir-faire, d’outils et de ressources pour
-        traduire des documents juridiques simples.
+        <b>Objectif</b> : disposer d’un savoir-faire, d’outils et de ressources
+        pour traduire des documents juridiques simples.
         <ul>
           <li>
             Typologie des textes juridiques : avoir une vue d’ensemble des
@@ -71,8 +71,8 @@ const data = [
           Les fondamentaux de la culture et du langage juridiques
         </div>
         <br />
-        <b>Objectif</b> : disposer d’un savoir-faire, d’outils et de ressources pour
-        comprendre et rédiger en français des documents juridiques simples
+        <b>Objectif</b> : disposer d’un savoir-faire, d’outils et de ressources
+        pour comprendre et rédiger en français des documents juridiques simples
         <ul>
           <li>
             Typologie des textes juridiques : avoir une vue d’ensemble des
