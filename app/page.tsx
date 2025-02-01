@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Banner title={"Dépannage informatique"} />
+      <Banner />
       <section className="flex flex-col w-full max-w-[1440px] p-4">
         <h2 className="text-xl sm:text-2xl text-center w-full p-4 lg:p-8">
           Services linguistiques spécialisés dans le domaine juridique, pour les

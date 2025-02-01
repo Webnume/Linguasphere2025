@@ -226,7 +226,7 @@ export default function Form() {
               id="form_message"
               {...register("message", { required: "Message obligatoire." })}
               className="border-orange  min-h-[420px]"
-              placeholder="Merci de préciser la problèmatique que vous rencontrez *"
+              placeholder="Merci de préciser votre demande *"
               rows={10} 
             ></textarea>
             <p className="text-orange">{errors.message?.message}</p>
