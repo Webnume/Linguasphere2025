@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { GrContact } from "react-icons/gr";
 
@@ -9,12 +9,15 @@ export default function Footer() {
       <section className="flex flex-col md:flex bg-gray-700 justify-center w-full items-center ">
         <article className="max-w-[1440px] flex-col w-full flex gap-8 justify-between md:flex-row  items-center p-4">
           <section className="flex flex-col items-center">
-            <Link href="/contact-informatique-montpellier" className="flex gap-2 items-center">
+            <Link
+              href="/contact-traduction-juridique"
+              className="flex gap-2 items-center"
+            >
               <GrContact size="2rem" />
               <strong>FORMULAIRE DE CONTACT</strong>
             </Link>
           </section>
-          <ul className="text-left p-l-[20px]">
+          {/* <ul className="text-left p-l-[20px]">
             <li>
               <Link href="/depannage-informatique-montpellier#Formatage%20et%20réinstallation%20du%20système%20d'exploitation">
                 Formatage de PC.
@@ -45,8 +48,8 @@ export default function Footer() {
                 Maintenance informatique.
               </Link>
             </li>
-          </ul>
-          <ul className="text-align:left; padding-left:20px;">
+          </ul> */}
+          {/* <ul className="text-align:left; padding-left:20px;">
             <li>
               <Link href="/assistance-informatique-montpellier#Installation%20de%20box%20internet%20et%20configuration%20r%C3%A9seau">
                 Installation d'internet et wifi.
@@ -77,22 +80,15 @@ export default function Footer() {
                 Changement de pâte thermique.
               </Link>
             </li>
-          </ul>
+          </ul> */}
           <p className="flex items-center gap-8">
             <Link
-              href="http://blog.pcnumerik.fr/"
-              target="_blank"
-              className="text-xl"
-            >
-              Le Blog
-            </Link>
-            <Link
-              href="https://www.facebook.com/Pcnumerik-296884693771747/"
+              href="https://www.linkedin.com/in/virginie-vermonet-linguasphere/"
               target="_blank"
             >
-              <FaFacebookF size="1.75rem" />
+              <FaLinkedinIn size="1.75rem" />
             </Link>
-            <Link href="https://twitter.com/pcnumerik" target="_blank">
+            <Link href="https://x.com/LinguasphereFr" target="_blank">
               <FaXTwitter size="1.75rem" />
             </Link>
           </p>
@@ -102,17 +98,18 @@ export default function Footer() {
         <article className="flex flex-col w-full max-w-[1440px] gap-8 justify-between md:flex-row  items-center">
           <ul>
             <Link href="/">Accueil</Link> |{" "}
-            <Link href="/depannage-informatique-montpellier">Dépannage</Link> |{" "}
-            <Link href="/maintenance-informatique-montpellier">
-              Maintenance
+            <Link href="/expertises-dans-les-domaines-du-droit">
+              Expertises
             </Link>{" "}
             |{" "}
-            <Link href="/assistance-informatique-montpellier">Assistance</Link>{" "}
-            |{" "}
-            <Link href="/recuperation-de-donnees-montpellier">
-              Récupération de données
+            <Link href="/traduction-juridique-anglais-espagnol-vers-le-francais">
+              Traduction
             </Link>{" "}
-            | <Link href="/contact-informatique-montpellier">Contact</Link>
+            | <Link href="/revision">Révision</Link> |{" "}
+            <Link href="/redaction">Rédaction</Link> |{" "}
+            <Link href="/formation-a-la-traduction-juridique">Formation</Link> |{" "}
+            <Link href="/a-propos">À propos</Link> |{" "}
+            <Link href="/contact-traduction-juridique">Contact</Link>
           </ul>
           <section>
             <ul className="flex gap-4">
@@ -121,7 +118,7 @@ export default function Footer() {
                   CGV / Qui sommes-nous
                 </Link>
               </li>
-              <li>Copyright © 2002-{new Date().getFullYear()}, PCnumerik</li>
+              <li>Copyright © 2005-{new Date().getFullYear()}, PCnumerik</li>
             </ul>
           </section>
         </article>
