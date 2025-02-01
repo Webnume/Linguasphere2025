@@ -11,8 +11,9 @@ export default function ListCardMini() {
           categorie.name !== "Expertises dans les domaines du droit" &&
           categorie.name !== "À propos" &&
           categorie.image && (
-            <Link href={categorie.linkHref} key={categorie.name}>
-              <article className="group sm:flex sm:flex-col border border-blue sm:max-w-[280px] p-4 h-full hover:border-orange hover:border-1 hover:scale-105 transition ease-in-out items-center gap-4">
+            <article className="group sm:flex sm:flex-col border border-blue sm:max-w-[280px] p-4 h-full hover:border-orange hover:border-1 hover:scale-105 transition ease-in-out items-center flex gap-4">
+              {" "}
+              <Link href={categorie.linkHref} key={categorie.name} className="flex flex-col items-center gap-4">
                 {/* <Image
                   src={categorie.image?.src}
                   alt={categorie.image?.alt}
@@ -36,15 +37,22 @@ export default function ListCardMini() {
                   <FaGraduationCap className="text-6xl text-blue group-hover:text-orange" />
                 )}
                 <h2 className="font-semibold text-blue group-hover:text-orange">
-                  {categorie.name === "Traduction juridique anglais-espagnol vers le français"
+                  {categorie.name ===
+                  "Traduction juridique anglais-espagnol vers le français"
                     ? "Traduction"
                     : categorie.name === "Formation à la traduction juridique"
                     ? "Formation"
                     : categorie.name}
                 </h2>
-                <p className="">{categorie.description}</p>
-              </article>
-            </Link>
+                <p className="align-middle">{categorie.description}</p>
+                <button
+                >En savoir plus</button>
+              </Link>{" "}
+              {/* <Link
+                href={categorie.linkHref}
+              >
+              </Link> */}
+            </article>
           )
       )}
     </section>

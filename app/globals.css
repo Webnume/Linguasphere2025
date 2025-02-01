@@ -139,3 +139,18 @@ h3 {
   align-items: center;
   cursor: pointer;
 }
+/* py-2 px-6 bg-orange hover:bg-blue text-white font-semibold cursor-pointer transition ease-in-out duration-500 rounded-full text-sm */
+button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #e85f0c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 2rem;
+  font-size: 1rem;  
+}
+button:hover {
+  background-color: #00679a;
+}

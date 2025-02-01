@@ -12,11 +12,6 @@ export default function Form() {
     surname: string;
     email: string;
     phone: string;
-    appareil: string;
-    marque: string;
-    modele: string;
-    systeme: string;
-    donnees: string;
     message: string;
   };
 
@@ -35,11 +30,6 @@ export default function Form() {
       surname: "",
       email: "",
       phone: "",
-      appareil: "",
-      marque: "",
-      modele: "",
-      systeme: "",
-      donnees: "",
       message: "",
     },
   });
@@ -220,19 +210,18 @@ export default function Form() {
                 </div>
               </div>
             </fieldset>
-          <div className="flex flex-col w-full max-w-[900px] p-2 mb-8 ">
-            <label htmlFor="form_message">Message *</label>
-            <textarea
-              id="form_message"
-              {...register("message", { required: "Message obligatoire." })}
-              className="border-orange  min-h-[420px]"
-              placeholder="Précisez votre demande *"
-              rows={10} 
-            ></textarea>
-            <p className="text-orange">{errors.message?.message}</p>
-          </div>
+            <div className="flex flex-col w-full max-w-[900px] p-2 mb-8 ">
+              <label htmlFor="form_message">Message *</label>
+              <textarea
+                id="form_message"
+                {...register("message", { required: "Message obligatoire." })}
+                className="border-orange  min-h-[420px]"
+                placeholder="Précisez votre demande *"
+                rows={10}
+              ></textarea>
+              <p className="text-orange">{errors.message?.message}</p>
+            </div>
           </section>
-
 
           <section className="flex flex-col items-center">
             <input

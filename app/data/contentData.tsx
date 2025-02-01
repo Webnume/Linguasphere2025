@@ -67,10 +67,7 @@ export const contentData = [
                 Politiques de l’entreprise
                 <ul>
                   <li>Confidentialité</li>
-                  <li>
-                    Données personnelles et respect de la vie
-                    privée
-                  </li>
+                  <li>Données personnelles et respect de la vie privée</li>
                   <li>Conflits d’intérêts</li>
                   <li>Alerte professionnelle</li>
                   <li>Sanctions internationales</li>
@@ -230,6 +227,12 @@ export const contentData = [
                 Faire traduire en français un texte juridique rédigé en anglais
                 ou en espagnol.
               </p>
+              <Link
+                href={"expertises-dans-les-domaines-du-droit/"}
+                className="flex flex-col items-center gap-4"
+              >
+                <button>Voir les domaines de spécialisation</button>
+              </Link>{" "}
             </section>
             <section className="mb-10">
               <H2 withIcon={"BsArrowCounterclockwise"}>Notre solution</H2>
@@ -268,7 +271,8 @@ export const contentData = [
       src: "/images/_7b0e784e-9b15-4d30-bf14-9b8724428bae.jpg",
       alt: "Maintenance informatique",
     },
-    description: "Contrôler la qualité d’une traduction ou d’un écrit juridique.",
+    description:
+      "Contrôler la qualité d’une traduction ou d’un écrit juridique.",
     linkHref: "/revision",
     linkNameMainMenu: "Révision",
     keywords: ["optimisation de l'ordinateur", "optimsation des performances"],
