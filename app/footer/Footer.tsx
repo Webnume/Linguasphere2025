@@ -114,11 +114,11 @@ export default function Footer() {
           <section>
             <ul className="flex gap-4">
               <li>
-                <Link href="/cgv/cgv-PCnumerik.pdf" target="_blank">
-                  CGV / Qui sommes-nous
+                <Link href="/cgv/mentions-legales.pdf" target="_blank">
+                  Mentions légales
                 </Link>
               </li>
-              <li>Copyright © 2005-{new Date().getFullYear()}, PCnumerik</li>
+              <li>Copyright © 2005-{new Date().getFullYear()}, LinguaSphere</li>
             </ul>
           </section>
         </article>

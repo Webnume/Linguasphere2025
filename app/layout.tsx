@@ -106,9 +106,9 @@ jQuery(document).ready(function( $ ) {
 </script> */}
 
         <Image
-          src="/images/pcnumerikecran.jpg"
+          src="/images/_f97c3806-d885-4769-817b-34cd2d0d2349.jpg"
           alt="ordinateur"
-          width={571}
+          width={350}
           height={350}
         />
         <Footer />
