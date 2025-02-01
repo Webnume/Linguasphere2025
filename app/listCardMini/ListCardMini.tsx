@@ -36,9 +36,10 @@ export default function ListCardMini() {
                   <FaGraduationCap className="text-6xl text-blue group-hover:text-orange" />
                 )}
                 <h2 className="font-semibold text-blue group-hover:text-orange">
-                  {categorie.name ===
-                  "Traduction juridique anglais-espagnol vers le français"
+                  {categorie.name === "Traduction juridique anglais-espagnol vers le français"
                     ? "Traduction"
+                    : categorie.name === "Formation à la traduction juridique"
+                    ? "Formation"
                     : categorie.name}
                 </h2>
                 <p className="">{categorie.description}</p>
