@@ -224,8 +224,9 @@ export const contentData = [
             <section className="mb-10">
               <H2 withIcon={"IoMicCircleSharp"}>Votre demande</H2>
               <p>
-                Faire traduire en français un texte juridique rédigé en anglais
-                ou en espagnol.
+                <b>Faire traduire</b> en <b>français</b> un texte juridique
+                rédigé en <b>anglais</b>
+                ou en <b>espagnol</b>.
               </p>
               <Link
                 href={"expertises-dans-les-domaines-du-droit/"}
@@ -237,26 +238,30 @@ export const contentData = [
             <section className="mb-10">
               <H2 withIcon={"BsArrowCounterclockwise"}>Notre solution</H2>
               <p>
-                Transposer et adapter un système et une culture juridiques,
-                susceptibles de contenir des concepts distincts ou inconnus du
-                droit français, pour restituer au mieux le sens et la valeur du
-                texte d’origine.
+                <b>Transposer</b> et <b>adapter</b> un <b>système</b> et une{" "}
+                <b>culture juridiques</b>, susceptibles de contenir des concepts
+                distincts ou inconnus du droit français, pour <b>restituer</b>{" "}
+                au mieux le <b>sens</b> et la <b>valeur</b> du
+                <b>texte</b> d’origine.
               </p>
             </section>
             <section className="mb-10">
               <H2 withIcon={"MdDone"}>Nos atouts</H2>
               <p>
-                Une démarche comparatiste, une excellente connaissance des
-                métiers du droit et de la conformité et de leurs enjeux, une
-                maîtrise du style juridique et des ressources documentaires
+                Une <b>démarche comparatiste</b>, une excellente{" "}
+                <b>connaissance</b> des
+                <b>métiers</b> du <b>droit</b> et de la <b>conformité</b> et de
+                leurs <b>enjeux</b>, une
+                <b>maîtrise</b> du <b>style juridique</b> et des{" "}
+                <b>ressources documentaires</b>
                 spécialisées.
               </p>
             </section>
             <section className="mb-10">
               <H2 withIcon={"FaCommentMedical"}>Votre bénéfice</H2>
               <p>
-                Une traduction idiomatique, conforme aux concepts et à la langue
-                du droit.
+                Une <b>traduction idiomatique</b>, conforme aux concepts et à la
+                langue du droit.
               </p>
             </section>
           </>
@@ -292,21 +297,28 @@ export const contentData = [
             <section className="mb-10">
               <H2 withIcon={"IoMicCircleSharp"}>Votre demande</H2>
               <p>
-                Avoir un double regard sur une traduction ou contrôler la
-                qualité d’une traduction.
+                Avoir un <b>double regard</b> sur une <b>traduction</b> ou{" "}
+                <b>contrôler</b> la <b>qualité</b> d’une <b>traduction</b>.
               </p>
+              <Link
+                href={"expertises-dans-les-domaines-du-droit/"}
+                className="flex flex-col items-center gap-4"
+              >
+                <button>Voir les domaines de spécialisation</button>
+              </Link>{" "}
             </section>
             <section className="mb-10">
               <H2 withIcon={"BsArrowCounterclockwise"}>Notre solution</H2>
               <p>
-                Examiner votre traduction, par comparaison avec le texte
-                d’origine, afin de parfaire sa rédaction, de vérifier
-                l’adéquation des choix terminologiques au contexte, de rectifier
-                les erreurs et de contrôler sa qualité.
+                <b>Examiner</b> votre traduction, par comparaison avec le texte
+                d’origine, afin de <b>parfaire</b> sa <b>rédaction</b>, de
+                vérifier l’<b>adéquation</b> des <b>choix terminologiques</b> au
+                contexte, de <b>rectifier</b> les <b>erreurs</b> et de{" "}
+                <b>contrôler</b> sa <b>qualité</b>.
               </p>
             </section>
-            <span>Exemples de points contrôlés :</span>
-            <ul>
+            <span className="text-orange">Exemples de points contrôlés :</span>
+            <ul className="pb-8">
               <li>Fautes d’orthographe, de grammaire ou de conjugaison</li>
               <li>Erreurs de syntaxe, de style ou de typographie</li>
               <li>Contresens ou erreurs de compréhension</li>
@@ -320,15 +332,16 @@ export const contentData = [
             <section className="mb-10">
               <H2 withIcon={"MdDone"}>Nos atouts</H2>
               <p>
-                Une maîtrise de la langue française et juridique, une grande
-                attention aux détails et une extrême rigueur.
+                Une <b>maîtrise</b> de la <b>langue française</b> et{" "}
+                <b>juridique</b>, une grande <b>attention</b> aux <b>détails</b>{" "}
+                et une extrême <b>rigueur</b>.
               </p>
             </section>
             <section className="mb-10">
               <H2 withIcon={"FaCommentMedical"}>Votre bénéfice</H2>
               <p>
-                Une traduction idiomatique, conforme aux concepts et à la langue
-                du droit.
+                Une <b>traduction idiomatique</b>, conforme aux <b>concepts</b>{" "}
+                et à la <b>langue</b> du <b>droit</b>.
               </p>
             </section>
           </>
@@ -366,15 +379,18 @@ export const contentData = [
             <section className="mb-10">
               <H2 withIcon={"IoMicCircleSharp"}>Votre demande</H2>
               <p>
-                Faire rédiger ou réécrire un texte en français pour communiquer
-                et diffuser le droit, ou harmoniser votre communication
-                juridique,
+                Faire <b>rédiger</b> ou <b>réécrire</b> un <b>texte</b> en{" "}
+                <b>français</b> pour <b>communiquer</b>
+                et <b>diffuser</b> le <b>droit</b>, ou <b>harmoniser</b> votre{" "}
+                <b>communication juridique</b>,
               </p>
-              <ul>
+              <ul className="pb-8">
                 <li>au sein de votre entreprise</li>
                 <li>auprès de vos clients et du grand public</li>
               </ul>
-              <span>Exemples de supports rédigés :</span>
+              <span className="text-orange">
+                Exemples de supports rédigés :
+              </span>
               <ul>
                 <li>Formation</li>
                 <li>Communication</li>
@@ -391,32 +407,37 @@ export const contentData = [
             <section className="mb-10">
               <H2 withIcon={"BsArrowCounterclockwise"}>Notre solution</H2>
               <p>
-                Choisir les contenus, les mots et le niveau de langage
-                appropriés pour véhiculer votre message juridique de manière
-                fluide et efficace.
+                <b>Choisir</b> les <b>contenus</b>, les <b>mots</b> et le{" "}
+                <b>niveau de langage</b> appropriés pour <b>véhiculer</b> votre{" "}
+                <b>message juridique</b> de manière <b>fluide</b> et{" "}
+                <b>efficace</b>.
               </p>
             </section>
             <section className="mb-10">
               <H2 withIcon={"MdDone"}>Nos atouts</H2>
               <p>
-                Une plume pertinente axée sur les besoins du lecteur, une
-                excellente connaissance des métiers du droit et de la conformité
-                et de leurs enjeux et une habileté à transmettre l’information
-                juridique et à la rendre compréhensible par le public visé.
+                Une <b>plume pertinente</b> axée sur les <b>besoins</b> du{" "}
+                <b>lecteur</b>, une excellente <b>connaissance</b> des{" "}
+                <b>métiers</b> du <b>droit</b> et de la <b>conformité</b> et de
+                leurs <b>enjeux</b> et une <b>habileté</b> à <b>transmettre</b>{" "}
+                l’<b>information juridique</b> et à la rendre{" "}
+                <b>compréhensible</b> par le <b>public visé</b>.
               </p>
             </section>
             <section className="mb-10">
               <H2 withIcon={"FaCommentMedical"}>Votre bénéfice</H2>
               <ul>
                 <li>
-                  Un texte juridique{" "}
+                  Un <b>texte juridique</b>{" "}
                   <ul>
                     <li>clair et concis</li>
                     <li>facile et agréable à lire</li>
                     <li>adapté au message et au(x) destinataire(s)</li>
                   </ul>
                 </li>
-                <li>Une communication harmonisée</li>
+                <li>
+                  Une <b>communication harmonisée</b>
+                </li>
               </ul>
             </section>
           </>
@@ -455,19 +476,23 @@ export const contentData = [
             <section className="mb-10">
               <H2 withIcon={"IoMicCircleSharp"}>Votre demande</H2>
               <p>
-                Vous former à la traduction juridique ou au français juridique
-                (initiation ou perfectionnement).
+                Vous <b></b>former à la <b></b>traduction juridique ou au{" "}
+                <b></b>français juridique (initiation ou perfectionnement).
               </p>
             </section>
             <section className="mb-10">
               <H2 withIcon={"BsArrowCounterclockwise"}>Notre solution</H2>
-              <p>
-                Enseigner et transmettre la culture, les concepts et la langue
-                du droit en vue de faire acquérir les connaissances et les
-                compétences nécessaires à la compréhension, la traduction, la
-                révision ou la rédaction d’écrits juridiques en français.
+              <p className="mb-8">
+                <b>Enseigner</b> et <b>transmettre</b> la <b>culture</b>, les{" "}
+                <b>concepts</b> et la <b>langue</b>
+                du <b>droit</b> en vue de faire <b>acquérir</b> les{" "}
+                <b>connaissances</b> et les
+                <b>compétences</b> nécessaires à la <b>compréhension</b>, la{" "}
+                <b>traduction</b>, la
+                <b>révision</b> ou la <b>rédaction</b> d’
+                <b>écrits juridiques</b> en <b>français</b>.
               </p>
-              <span>Ingénierie pédagogique :</span>
+              <span className="text-orange mt-6">Ingénierie pédagogique :</span>
               <ul>
                 <li>
                   Analyse des besoins et définition des objectifs pédagogiques

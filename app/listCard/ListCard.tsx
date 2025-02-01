@@ -107,7 +107,7 @@ export default function ListCard({
           ) : (
             ""
           )}
-          <Link
+          Des informations complémentaires ? Un devis ?<Link
             className="bg-orange text-white hover:bg-blue p-2 ml-5 rounded-b-xl cursor-pointer transition ease-in-out duration-500"
             href="/contact-traduction-juridique"
             rel="noreferrer"
