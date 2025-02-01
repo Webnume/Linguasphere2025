@@ -8,7 +8,7 @@ export default function Banner({ title }: { title: string }) {
       id="banner"
     >
       <section className="flex flex-col justify-center items-center w-full max-w-[1440px] z-1">
-        <Image
+        {/* <Image
           src="/images/depanneurFly.png"
           alt="bg_header"
           width={361}
@@ -21,7 +21,7 @@ export default function Banner({ title }: { title: string }) {
           alt="bg_header"
           width={784}
           height={212}
-        />
+        /> */}
       </section>
     </article>
   );
