@@ -11,10 +11,10 @@ const data = [
     ),
     answer: (
       <>
-        Mémentos droit(s) et langue(s)
+        <div className="text-orange mt-8">Mémentos droit(s) et langue(s)</div>
         <br />
-        Objectif : disposer d’un savoir-faire, d’outils et de ressources pour
-        traduire des documents liés à un domaine du droit (famille, biens,
+        <b>Objectif</b> : disposer d’un savoir-faire, d’outils et de ressources
+        pour traduire des documents liés à un domaine du droit (famille, biens,
         sociétés, contrats) dans un couple de langues (anglais ou espagnol vers
         le français)
         <ul>
@@ -28,9 +28,11 @@ const data = [
             ressources)
           </li>
         </ul>
-        Les fondamentaux de la traduction juridique
+        <div className="text-orange mt-8">
+          Les fondamentaux de la traduction juridique
+        </div>
         <br />
-        Objectif : disposer d’un savoir-faire, d’outils et de ressources pour
+        <b>Objectif</b> : disposer d’un savoir-faire, d’outils et de ressources pour
         traduire des documents juridiques simples.
         <ul>
           <li>
@@ -65,9 +67,11 @@ const data = [
     question: <h4>Français juridique</h4>,
     answer: (
       <>
-        Les fondamentaux de la culture et du langage juridiques
+        <div className="text-orange mt-8">
+          Les fondamentaux de la culture et du langage juridiques
+        </div>
         <br />
-        Objectif : disposer d’un savoir-faire, d’outils et de ressources pour
+        <b>Objectif</b> : disposer d’un savoir-faire, d’outils et de ressources pour
         comprendre et rédiger en français des documents juridiques simples
         <ul>
           <li>
@@ -93,14 +97,8 @@ const data = [
     ),
   },
   {
-    question: (
-      <h4>Formations spécialisées sur mesure</h4>
-    ),
-    answer: (
-      <p>
-        Conception de formations adaptées à vos besoins.
-      </p>
-    ),
+    question: <h4>Formations spécialisées sur mesure</h4>,
+    answer: <p>Conception de formations adaptées à vos besoins.</p>,
   },
 ];
 

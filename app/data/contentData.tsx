@@ -476,8 +476,8 @@ export const contentData = [
             <section className="mb-10">
               <H2 withIcon={"IoMicCircleSharp"}>Votre demande</H2>
               <p>
-                Vous <b></b>former à la <b></b>traduction juridique ou au{" "}
-                <b></b>français juridique (initiation ou perfectionnement).
+                Vous <b>former</b> à la <b>traduction juridique</b> ou au{" "}
+                <b>français juridique</b> (initiation ou perfectionnement).
               </p>
             </section>
             <section className="mb-10">
@@ -512,20 +512,25 @@ export const contentData = [
             <section className="mb-10">
               <H2 withIcon={"MdDone"}>Nos atouts</H2>
               <p>
-                Une maîtrise du savoir-faire à transmettre, une pédagogie
-                active, ludique, pragmatique et axée sur l’apprenant, ainsi
-                qu’un sens de l’écoute et de la communication.
+                Une <b>maîtrise</b> du <b>savoir-faire</b> à transmettre, une{" "}
+                <b>pédagogie active</b>, <b>ludique</b>, <b>pragmatique</b> et{" "}
+                <b>axée</b> sur l’<b>apprenant</b>, ainsi qu’un sens de l’
+                <b>écoute</b> et de la <b>communication</b>.
               </p>
             </section>
             <section className="mb-10">
               <H2 withIcon={"FaCommentMedical"}>Votre bénéfice</H2>
               <ul>
-                <li>Maîtrise des fondamentaux</li>
-                <li>Gain d’autonomie et d’aisance</li>
+                <li>
+                  <b>Maîtrise</b> des <b>fondamentaux</b>
+                </li>
+                <li>
+                  <b>Gain</b> d’<b>autonomie</b> et d’<b>aisance</b>
+                </li>
               </ul>
               <span>
-                pour comprendre, traduire et rédiger des écrits juridiques en
-                français
+                pour <b>comprendre</b>, <b>traduire</b> et <b>rédiger</b> des{" "}
+                <b>écrits juridiques</b> en <b>français</b>
               </span>
             </section>
             <FaqList />
