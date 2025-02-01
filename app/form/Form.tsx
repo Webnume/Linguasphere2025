@@ -237,7 +237,7 @@ export default function Form() {
           <section className="flex flex-col items-center">
             <input
               type="submit"
-              className="p-4 bg-gray-700 hover:bg-orange text-white font-semibold text-lg uppercase cursor-pointer transition ease-in-out duration-500"
+              className="p-4 bg-gray-700 hover:bg-orange text-white font-semibold text-lg cursor-pointer transition ease-in-out duration-500"
               value="Envoyez votre message"
             />
 

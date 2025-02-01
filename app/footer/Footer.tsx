@@ -14,7 +14,7 @@ export default function Footer() {
               className="flex gap-2 items-center"
             >
               <GrContact size="2rem" />
-              <strong>FORMULAIRE DE CONTACT</strong>
+              <strong>Formulaire de contact</strong>
             </Link>
           </section>
           {/* <ul className="text-left p-l-[20px]">

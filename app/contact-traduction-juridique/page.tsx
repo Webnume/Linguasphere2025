@@ -15,7 +15,7 @@ export default function Contact() {
     <>
       <Banner title={"Contact et demande de devis"} />
       <section className="md:p-6 p-2 max-w-[1000px] flex flex-col">
-        <h3>TÉLÉPHONE</h3>
+        <h3>Téléphone</h3>
         <span className="text-lg">
           <b>+33 (0)4 11 93 45 14</b>
           <span className="text-sm"> (Prix d'un appel local)</span>
@@ -39,7 +39,7 @@ export default function Contact() {
             .
           </Link>
         </span>
-        <h3 id="formHref">FORMULAIRE DE CONTACT</h3>
+        <h3 id="formHref">Formulaire de contact</h3>
         <Form />
       </section>
     </>
