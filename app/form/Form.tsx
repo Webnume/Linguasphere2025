@@ -73,7 +73,7 @@ export default function Form() {
           </p>
           <p>
             Un oubli ?{" "}
-            <span className="cursor-pointer" onClick={() => setMessage("")}>
+            <span className="cursor-pointer text-orange" onClick={() => setMessage("")}>
               Modifier votre message
             </span>{" "}
           </p>
