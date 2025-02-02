@@ -178,7 +178,7 @@ export default function Form() {
                 </div>
 
                 <div className="flex flex-col w-full lg:w-full">
-                  <label htmlFor="form_email">Email *</label>
+                  <label htmlFor="form_email">E-mail *</label>
                   <input
                     id="form_email"
                     type="email"
@@ -216,7 +216,7 @@ export default function Form() {
                 id="form_message"
                 {...register("message", { required: "Message obligatoire." })}
                 className="border-blue  min-h-[420px]"
-                placeholder="Précisez votre demande *"
+                placeholder="Indiquez votre demande *"
                 rows={10}
               ></textarea>
               <p className="text-orange">{errors.message?.message}</p>
