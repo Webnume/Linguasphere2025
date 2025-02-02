@@ -68,7 +68,7 @@ export default function Form() {
     <>
       {message ? (
         <>
-          <p className="text-white text-xl border-orange p-2 bg-orange">
+          <p className="text-white text-xl border-blue p-2 bg-blue">
             {message}{" "}
           </p>
           <p>
