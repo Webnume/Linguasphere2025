@@ -1,7 +1,5 @@
 import Banner from "./banner/Banner";
 import ListCardMini from "./listCardMini/ListCardMini";
-import FaqList from "./faq/FaqList";
-import Avantages from "./avantages/Avantages";
 import { Metadata } from "next";
 import GoogleReviews from "./google-reviews/GoogleReviews";
 import Link from "next/link";
