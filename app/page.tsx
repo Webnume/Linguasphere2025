@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Banner />
       <section className="flex flex-col w-full max-w-[1440px] p-4">
-        <h2 className="text-xl sm:text-2xl text-start w-full p-4 lg:p-8">
+        <h2 className="text-xl sm:text-2xl text-start w-full py-4 lg:py-8">
           <span className="text-blue">Services linguistiques spécialisés</span>{" "}
           dans le <span className="text-blue">domaine juridique</span>, pour les
           professionnels du droit, de la conformité et de la communication
