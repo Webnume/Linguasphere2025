@@ -19,11 +19,11 @@ export default function Faq({
           } transition ease-in-out`}
         >
           <span className="font-semibold">{item.question}</span>
-          <span className="text-xl ml-2	">{isActive ? "-" : "+"}</span>
+          <span className="ml-2	">{isActive ? "-" : "+"}</span>
         </div>
         <div className="flex ml-2">
           {isActive ? (
-            <span className="text-xl ml-2 p-4">{item.answer}</span>
+            <span className="ml-2 p-4">{item.answer}</span>
           ) : (
             ""
           )}
