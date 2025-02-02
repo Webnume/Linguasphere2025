@@ -15,12 +15,12 @@ export default function Contact() {
     <>
       <Banner title={"Contact et demande de devis"} />
       <section className="md:p-6 p-2 max-w-[1000px] flex flex-col">
-        <h3>Téléphone</h3>
+        <h3 className="text-blue">Téléphone</h3>
         <span className="text-lg">
           <b>+33 (0)4 11 93 45 14</b>
           <span className="text-sm"> (Prix d'un appel local)</span>
         </span>
-        <h3>E-mail</h3>
+        <h3 className="text-blue">E-mail</h3>
         <span className="text-lg">
           <b>contact[at]linguasphere.fr</b>
         </span>
@@ -34,12 +34,12 @@ export default function Contact() {
             rel="noreferrer"
           >
             <u>
-              <b>formulaire ci-dessous</b>
+              <b className="text-blue">formulaire ci-dessous</b>
             </u>
             .
           </Link>
         </span>
-        <h3 id="formHref">Formulaire de contact</h3>
+        <h3 id="formHref" className="text-blue">Formulaire de contact</h3>
         <Form />
       </section>
     </>

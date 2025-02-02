@@ -85,8 +85,8 @@ export default function Form() {
           ref={formRef}
         >
           <section className="flex flex-col lg:flex-row gap-4 mb-8">
-            <fieldset className="p-2  border border-orange m-2">
-              <legend className="text-center px-2 text-orange text-xl">
+            <fieldset className="p-2  border border-blue m-2">
+              <legend className="text-center px-2 text-blue text-xl">
                 Vos coordonnées
               </legend>
               <div className="flex items-center justify-center gap-4 flex-col max-w-[1440px] p-4">
@@ -215,7 +215,7 @@ export default function Form() {
               <textarea
                 id="form_message"
                 {...register("message", { required: "Message obligatoire." })}
-                className="border-orange  min-h-[420px]"
+                className="border-blue  min-h-[420px]"
                 placeholder="Précisez votre demande *"
                 rows={10}
               ></textarea>
