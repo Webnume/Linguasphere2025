@@ -2,7 +2,7 @@
 import { use, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Banner = () => {
+const Banner = ({ title }: { title: string }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState("");
   const images = [
@@ -77,9 +77,11 @@ const Banner = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center w-full max-w-[1440px] z-1">
-      <div className="slider-container  overflow-hidden w-[100vw] flex items-center justify-center">
-        <div className="carousel">
+    <section className="flex flex-col justify-center items-center w-full max-w-[1440px] z-1 overflow-hidden">
+      <div className="slider-container   w-[100vw] flex items-center justify-center">
+        <div className="carousel w-full h-[370px] relative flex items-center
+    justify-center 
+    align-center">
           <div className="carousel-images">
             <AnimatePresence>
               <motion.img

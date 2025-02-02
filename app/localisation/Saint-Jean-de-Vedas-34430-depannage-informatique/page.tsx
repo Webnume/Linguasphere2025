@@ -1,4 +1,4 @@
-import Banner from "@/banner/Banner_OLD";
+import Banner from "@/banner/Banner";
 import ListCardMini from "@/listCardMini/ListCardMini";
 import FaqList from "@/faq/FaqList";
 import Avantages from "@/avantages/Avantages";

@@ -1,4 +1,4 @@
-import Banner from "../banner/Banner_OLD";
+import Banner from "../banner/Banner";
 import { Metadata } from "next";
 import Form from "../form/Form";
 import Link from "next/link";

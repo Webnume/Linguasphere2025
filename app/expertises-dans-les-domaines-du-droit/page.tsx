@@ -1,4 +1,4 @@
-import Banner from "../banner/Banner_OLD";
+import Banner from "../banner/Banner";
 import Lists from "../lists/Lists";
 import { Metadata } from "next";
 

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Banner />
+      <Banner title={"Home"} />
       <section className="flex flex-col w-full max-w-[1440px] p-4">
         <h2 className="text-xl sm:text-2xl text-start w-full py-4 lg:py-8">
           <span className="text-blue">Services linguistiques spécialisés</span>{" "}

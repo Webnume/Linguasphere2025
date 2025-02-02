@@ -1,6 +1,6 @@
 import React from "react";
 import { contentData } from "../data/contentData";
-import Banner from "../banner/Banner_OLD";
+import Banner from "../banner/Banner";
 import Link from "next/link";
 import { MdArrowBackIosNew } from "react-icons/md";
 import ListCard from "../listCard/ListCard";
