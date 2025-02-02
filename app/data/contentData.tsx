@@ -569,6 +569,7 @@ export const contentData = [
             <section className="mb-10">
               Un itinéraire alliant le droit et les langues
               <br />
+              <br />
               <H2 withIcon={"FaLinesLeaning "}>Parcours professionnel</H2>
               <ul>
                 <li>
