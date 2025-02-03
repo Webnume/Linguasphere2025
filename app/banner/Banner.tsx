@@ -1,17 +1,17 @@
-import { ImageSlider } from "./slider/ImageSlider"
-import car1 from "./slider/imgs/car-1.jpg"
-import car2 from "./slider/imgs/car-2.jpg"
-import car3 from "./slider/imgs/car-3.jpg"
-import car4 from "./slider/imgs/car-4.jpg"
-import car5 from "./slider/imgs/car-5.jpg"
+import { ImageSlider } from "./slider/ImageSlider";
+import photo1 from "../../public/images/Translation-Banner.jpg";
+import photo2 from "../../public/images/computer-language-translator_1c3fb8ae.jpg";
+import photo3 from "../../public/images/Contrat-opti.jpg";
+import photo4 from "../../public/images/rédaction-de-contenu-web.jpg";
+import photo5 from "../../public/images/contrat1-opti.jpg";
 
 const IMAGES = [
-  { url: car1, alt: "Car One" },
-  { url: car2, alt: "Car Two" },
-  { url: car3, alt: "Car Three" },
-  { url: car4, alt: "Car Four" },
-  { url: car5, alt: "Car Five" },
-]
+  { url: photo1, alt: "photo One" },
+  { url: photo2, alt: "photo Two" },
+  { url: photo3, alt: "photo Three" },
+  { url: photo4, alt: "photo Four" },
+  { url: photo5, alt: "photo Five" },
+];
 
 export default function Banner({ title }: { title: string }) {
   return (
@@ -19,14 +19,11 @@ export default function Banner({ title }: { title: string }) {
       style={{
         maxWidth: "1200px",
         width: "100%",
-        aspectRatio: "10 / 6",
+        aspectRatio: "16 / 6",
         margin: "0 auto",
       }}
     >
       <ImageSlider images={IMAGES} />
-      <a href="/" style={{ fontSize: "4rem" }}>
-        Link
-      </a>
     </div>
-  )
+  );
 }
