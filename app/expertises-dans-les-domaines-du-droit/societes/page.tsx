@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default function ChangementEcran() {
   return (
     <DetailsPage
-      currentCategory={"Dépannage informatique"}
-      currentService={"Réparation d'écran de PC portable"}
+      currentCategory={"Expertises dans les domaines du droit"}
+      currentService={"Sociétés"}
     />
   );
 }

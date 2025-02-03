@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default function SauvegardeDeDonnees() {
   return (
     <DetailsPage
-      currentCategory={"Dépannage informatique"}
-      currentService={"Sauvegarde et récupération de données"}
+      currentCategory={"Expertises dans les domaines du droit"}
+      currentService={"Communication juridique"}
     />
   );
 }

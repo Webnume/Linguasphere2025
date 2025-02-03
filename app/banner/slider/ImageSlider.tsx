@@ -10,6 +10,7 @@ type ImageSliderProps = {
   images: {
     url: StaticImageData;
     alt: string;
+    titleUrl: StaticImageData;
   }[];
 };
 
@@ -52,15 +53,38 @@ export function ImageSlider({ images }: ImageSliderProps) {
         }}
       >
         {images.map(({ url, alt }, index) => (
-          <Image
-            key={url as any}
-            src={url}
-            alt={alt}
-            aria-hidden={imageIndex !== index}
-            className="img-slider-img"
-            style={{ translate: `${-100 * imageIndex}%` }}
-          />
+          <>
+            <Image
+              key={url as any}
+              src={url}
+              alt={alt}
+              aria-hidden={imageIndex !== index}
+              className="img-slider-img"
+              style={{ translate: `${-100 * imageIndex}%` }}
+            />
+          </>
         ))}
+        <div
+          style={{
+            width: "55%",
+            display: "flex",
+            overflow: "hidden",
+            position: "absolute",
+          }}
+        >
+          {images.map(({ alt, titleUrl }, index) => (
+            <>
+              <Image
+                key={titleUrl as any}
+                src={titleUrl}
+                alt={alt}
+                aria-hidden={imageIndex !== index}
+                className="img-slider-img"
+                style={{ translate: `${-100 * imageIndex}%` }}
+              />
+            </>
+          ))}
+        </div>
       </div>
       <button
         onClick={showPrevImage}

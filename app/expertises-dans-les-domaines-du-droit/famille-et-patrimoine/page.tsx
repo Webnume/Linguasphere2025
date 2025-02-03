@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default function DesinfectionVirus() {
   return (
     <DetailsPage
-      currentCategory={"Dépannage informatique"}
-      currentService={"Suppression des virus"}
+      currentCategory={"Expertises dans les domaines du droit"}
+      currentService={"Famille et patrimoine"}
     />
   );
 }
