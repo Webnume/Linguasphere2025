@@ -57,12 +57,11 @@ const Header = () => {
 
         <ul className="hidden lg:flex items-center	z-10">
           {contentData?.map(({ categoryID, linkHref, linkNameMainMenu }) => (
-            <li
-              key={categoryID}
-              className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-orange duration-200 link-underline"
-            >
-              <Link href={linkHref}>{linkNameMainMenu}</Link>
-            </li>
+            <Link href={linkHref} key={categoryID}>
+              <li className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-orange duration-200 link-underline">
+                {linkNameMainMenu}
+              </li>
+            </Link>
           ))}
         </ul>
 
