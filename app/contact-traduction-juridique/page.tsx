@@ -2,12 +2,11 @@ import Banner from "../banner/Banner";
 import { Metadata } from "next";
 import Form from "../form/Form";
 import Link from "next/link";
-import Avantages from "../avantages/Avantages";
 
 export const metadata: Metadata = {
-  title: "PCnumerik.fr - Contact - Informatique Montpellier",
+  title: "Linguasphere.fr - Contact - Traduction juridique",
   description:
-    "Informatique Montpellier 34 à domicile. Dépannage informatique Montpellier et région, intervention rapide. Réparation d'ordinateur de bureau et pc portable.",
+    "Contactez-nous pour toute demande de devis de traduction juridique, rédaction de contenu web, révision de documents, formation en langues étrangères.",
 };
 
 export default function Contact() {
