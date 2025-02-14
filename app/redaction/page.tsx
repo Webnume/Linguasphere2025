@@ -2,12 +2,12 @@ import DetailsPage from "../detailsPage/DetailsPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Récupération de données Montpellier",
+  title: "Rédaction - LinguaSphere.fr",
   description:
-    "Récupération de données Montpellier 34 : disque dur, clé usb, mémoire flash, cd, dvd ...",
+    "Rédaction de documents",
 };
 
-export default function RecuperationDonnees() {
+export default function Redaction() {
   return (
     <>
       <DetailsPage

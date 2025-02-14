@@ -3,12 +3,12 @@ import DetailsPage from "../../detailsPage/DetailsPage";
 
 export const metadata: Metadata = {
   title:
-    "Suppression de virus, désinfection ordinateur PC Dépannage informatique - Montpellier 34",
+    "Famille et patrimoine - Expertises dans les domaines du droit",
   description:
-    "Suppression de virus, désinfection ordinateur PC à Montpellier 34. Dépannage informatique, optimisation, mise à jour de sécurité, nettoyage pc",
+    "La famille et le patrimoine sont des domaines du droit qui nécessitent une expertise particulière.",
 };
 
-export default function DesinfectionVirus() {
+export default function FamillePatrimoine() {
   return (
     <DetailsPage
       currentCategory={"Expertises dans les domaines du droit"}

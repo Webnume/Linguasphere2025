@@ -3,11 +3,11 @@ import DetailsPage from "../detailsPage/DetailsPage";
 
 
 export const metadata: Metadata = {
-  title: "Entreprise informatique Montpellier - Nettoyage ordinateur lent",
-  description: "Optimisation et nettoyage pc à Montpellier 34. Dépannage informatique, optimisation, mise à jour, refroidissement processeur, nettoyage mac.",
+  title: "formation à la traduction juridique",
+  description: "La formation à la traduction juridique est un domaine qui nécessite une expertise particulière.",
 }
 
-export default function Traduction() {
+export default function Formation() {
    return (
      <DetailsPage 
        currentCategory={"Formation à la traduction juridique"}

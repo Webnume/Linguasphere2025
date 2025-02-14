@@ -5,9 +5,9 @@ import GoogleReviews from "./google-reviews/GoogleReviews";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dépannage informatique Montpellier - Réparation ordinateur",
+  title: "Linguasphere - Services de traduction et de rédaction juridique",
   description:
-    "Dépannage informatique Montpellier. Réparation ordinateur Montpellier. Assistance informatique à domicile et maintenance par des réparateurs PC",
+    "Services de traduction et de rédaction juridique, spécialisés dans le domaine juridique, pour les professionnels du droit, de la conformité et de la communication multilingue, depuis 2005.",
 };
 
 export default function Home() {

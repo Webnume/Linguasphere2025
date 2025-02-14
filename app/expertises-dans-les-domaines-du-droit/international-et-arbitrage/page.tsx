@@ -3,16 +3,16 @@ import DetailsPage from "../../detailsPage/DetailsPage";
 
 export const metadata: Metadata = {
   title:
-    "Réparation écran pc ordinateur portable - Dépannage informatique Montpellier 34",
+    "international et arbitrage - Expertises dans les domaines du droit",
   description:
-    "réparation écran pc ordinateur portable à Montpellier 34. Dépannage informatique, remplacement écran, réparation pc portable, écran cassé, écran noir, écran blanc, écran qui clignote, changement écran",     
+    "L'arbitrage international est un domaine du droit qui nécessite une expertise particulière.",     
 };
 
 export default function ChangementEcran() {
   return (
     <DetailsPage
-      currentCategory={"Dépannage informatique"}
-      currentService={"Réparation d'écran de PC portable"}
+      currentCategory={"Expertises dans les domaines du droit"}
+      currentService={"International et arbitrage"}
     />
   );
 }

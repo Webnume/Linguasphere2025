@@ -3,8 +3,8 @@ import DetailsPage from "../detailsPage/DetailsPage";
 
 
 export const metadata: Metadata = {
-  title: "Entreprise informatique Montpellier - Nettoyage ordinateur lent",
-  description: "Optimisation et nettoyage pc à Montpellier 34. Dépannage informatique, optimisation, mise à jour, refroidissement processeur, nettoyage mac.",
+  title: "Traduction juridique anglais-espagnol vers le français - LinguaSphere.fr",
+  description: "Traduction juridique anglais-espagnol vers le français",
 }
 
 export default function Traduction() {

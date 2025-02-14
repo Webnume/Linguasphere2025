@@ -3,12 +3,12 @@ import DetailsPage from "../../detailsPage/DetailsPage";
 
 export const metadata: Metadata = {
   title:
-    "Sauvegarde et récupération de données - Dépannage informatique Montpellier 34",
+    "Communication juridique - Expertises dans les domaines du droit",
   description:
-    "sauvegarde et récupération de données à Montpellier 34. Dépannage informatique, récupération de données, pc qui ne démarre pas, sauvegarde de données, extraction de données",     
+    "La communication juridique est un domaine qui nécessite une expertise particulière.",     
 };
 
-export default function SauvegardeDeDonnees() {
+export default function CommunicationJuridique() {
   return (
     <DetailsPage
       currentCategory={"Expertises dans les domaines du droit"}
