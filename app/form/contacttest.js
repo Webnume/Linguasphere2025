@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Contact.module.scss";
 import { useForm } from "react-hook-form";

@@ -39,13 +39,10 @@ export default function Form() {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     const formatedData = new FormData(formRef.current as HTMLFormElement);
 
-    const response = await fetch(
-      "/app/api/contact/route",
-      {
-        method: "POST",
-        body: formatedData,
-      }
-    );
+    const response = await fetch("/app/api/contact/route", {
+      method: "POST",
+      body: formatedData,
+    });
     setMessage(
       "Votre message a bien été envoyé. Nous vous recontacterons dans les plus brefs délais. Merci !"
     );
@@ -73,7 +70,10 @@ export default function Form() {
           </p>
           <p>
             Un oubli ?{" "}
-            <span className="cursor-pointer text-orange" onClick={() => setMessage("")}>
+            <span
+              className="cursor-pointer text-orange"
+              onClick={() => setMessage("")}
+            >
               Modifier votre message
             </span>{" "}
           </p>
