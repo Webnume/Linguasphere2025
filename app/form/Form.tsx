@@ -17,7 +17,7 @@ export default function Form() {
 
   const [status, setStatus] = useState("");
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -44,7 +44,7 @@ export default function Form() {
   // const form = document.getElementById("contact_form") as HTMLFormElement;
   const formRef = useRef<HTMLFormElement>(null);
 
-  const onSubmit = async (e) => {
+  const onSubmit = async () => {
     // e.preventDefault();
     setStatus("Envoi en cours ...");
 
