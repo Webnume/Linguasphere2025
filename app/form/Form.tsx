@@ -39,7 +39,7 @@ export default function Form() {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     const formatedData = new FormData(formRef.current as HTMLFormElement);
 
-    const response = await fetch("/app/api/contact/route", {
+    const response = await fetch("/api/contact/route", {
       method: "POST",
       body: formatedData,
     });
@@ -61,7 +61,7 @@ export default function Form() {
       unregister("societe");
     }
   }, [watch("statut"), unregister]);
-  
+
   return (
     <>
       {message ? (
