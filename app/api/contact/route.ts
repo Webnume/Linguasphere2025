@@ -46,6 +46,12 @@ export async function POST(req: NextRequest) {
   }
 }
 
+export const config = {
+  api: {
+    bodyParser: true,
+  },
+};
+
 // import nodemailer from "nodemailer";
 // import { NextApiRequest, NextApiResponse } from "next";
 
