@@ -7,7 +7,7 @@ if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
   );
 }
 
-export async function POST(req: NextRequest): Promise<NextResponse> {
+export async function POST(req: NextRequest): Promise<any> {
   const { name, email, message } = await req.json();
 
   if (!name || !email || !message) {
