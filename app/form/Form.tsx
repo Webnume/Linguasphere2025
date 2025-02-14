@@ -40,7 +40,7 @@ export default function Form() {
     const formatedData = new FormData(formRef.current as HTMLFormElement);
 
     const response = await fetch(
-      "/api/contact/route",
+      "/app/api/contact/route",
       {
         method: "POST",
         body: formatedData,
