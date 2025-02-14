@@ -40,7 +40,7 @@ export default function Form() {
     const formatedData = new FormData(formRef.current as HTMLFormElement);
 
     const response = await fetch(
-      "/api/contact/route",
+      "https://www.linguasphere.fr/TraitementsEmailSitesKopetoPHP/PCnumerik/form-recaptcha-pcnumerik/contact-sans-recaptcha.php",
       {
         method: "POST",
         body: formatedData,
