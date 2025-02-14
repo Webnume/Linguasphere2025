@@ -55,17 +55,20 @@ export default function Form() {
     });
 
     const result = await response.json();
-    
 
     if (result.status === "OK") {
-      setStatus("Votre message a bien été envoyé. Nous vous recontacterons dans les plus brefs délais. Merci !");
-      setFormData({ statut: "",
+      setStatus(
+        "Votre message a bien été envoyé. Nous vous recontacterons dans les plus brefs délais. Merci !"
+      );
+      setFormData({
+        statut: "",
         societe: "",
         name: "",
         surname: "",
         email: "",
         phone: "",
-        message: ""});
+        message: "",
+      });
     } else {
       setStatus("Echec d'envoi de l'email");
     }
@@ -256,6 +259,7 @@ export default function Form() {
               <strong>*</strong> Champs obligatoires.
             </p>
           </section>
+         {status && <p className="text-white text-xl border-blue p-2 bg-blue">{status}</p>}
         </form>
       )}
     </>
