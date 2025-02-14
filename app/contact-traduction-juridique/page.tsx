@@ -39,7 +39,7 @@ export default function Contact() {
           </Link>
         </span>
         <h3 id="formHref" className="text-blue">Formulaire de contact</h3>
-        {/* <Form /> */}
+        <Form />
       </section>
     </>
   );
