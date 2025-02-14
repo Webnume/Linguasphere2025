@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 
 if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
   throw new Error(
@@ -11,7 +11,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   const { name, email, message } = await req.json();
 
   if (!name || !email || !message) {
-    return NextResponse.json({ status: "Bad Request", message: "Missing required fields" }, { status: 400 });
+    return NextResponse.json(
+      { status: "Bad Request", message: "Missing required fields" },
+      { status: 400 }
+    );
   }
 
   const transporter = nodemailer.createTransport({
@@ -42,6 +45,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     return NextResponse.json({ status: "OK" }, { status: 200 });
   } catch (error) {
     console.error(error);
-    return NextResponse.json({ status: "Error", message: "Failed to send email" }, { status: 500 });
+    return NextResponse.json(
+      { status: "Error", message: "Failed to send email" },
+      { status: 500 }
+    );
   }
 }
