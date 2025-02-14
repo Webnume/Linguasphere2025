@@ -17,7 +17,9 @@ export default function Form() {
 
   const [status, setStatus] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -55,6 +57,7 @@ export default function Form() {
     });
 
     const result = await response.json();
+    console.log(result);
 
     if (result.status === "OK") {
       setStatus(
@@ -127,6 +130,7 @@ export default function Form() {
                         })}
                         id="inlineRadio1"
                         value="particulier"
+                        onChange={handleChange}
                       />
                       <label htmlFor="inlineRadio1" className="font-normal m-2">
                         Un particulier
@@ -139,6 +143,7 @@ export default function Form() {
                         })}
                         id="inlineRadio2"
                         value="entreprise"
+                        onChange={handleChange}
                       />
                       <label className="font-normal m-2" htmlFor="inlineRadio2">
                         Une entreprise
@@ -151,6 +156,7 @@ export default function Form() {
                         })}
                         id="inlineRadio3"
                         value="association"
+                        onChange={handleChange}
                       />
                       <label className="font-normal m-2" htmlFor="inlineRadio3">
                         Une association
@@ -173,6 +179,7 @@ export default function Form() {
                       })}
                       className="form-control"
                       placeholder={`Mon ${watch("statut")} *`}
+                      onChange={handleChange}
                     />
                   </div>
                 )}
@@ -184,6 +191,7 @@ export default function Form() {
                     {...register("name", { required: "Nom obligatoire." })}
                     className="form-control"
                     placeholder="ex : Dupont *"
+                    onChange={handleChange}
                   />
                   <p className="text-orange">{errors.name?.message}</p>
                 </div>
@@ -198,6 +206,7 @@ export default function Form() {
                     })}
                     className="form-control"
                     placeholder="ex : Camille *"
+                    onChange={handleChange}
                   />
                   <p className="text-orange">{errors.surname?.message}</p>
                 </div>
@@ -214,6 +223,7 @@ export default function Form() {
                     })}
                     className="form-control"
                     placeholder="ex : monmail@gmail.com * "
+                    onChange={handleChange}
                   />
                   <p className="text-orange">{errors.email?.message}</p>
                 </div>
@@ -230,6 +240,7 @@ export default function Form() {
                     })}
                     className="form-control"
                     placeholder="ex : 0411934472"
+                    onChange={handleChange}
                   />
                   <p className="text-orange">{errors.phone?.message}</p>
                 </div>
@@ -242,6 +253,7 @@ export default function Form() {
                 {...register("message", { required: "Message obligatoire." })}
                 className="border-blue  min-h-[420px]"
                 placeholder="Indiquez votre demande *"
+                onChange={handleChange}
                 rows={10}
               ></textarea>
               <p className="text-orange">{errors.message?.message}</p>
@@ -259,7 +271,11 @@ export default function Form() {
               <strong>*</strong> Champs obligatoires.
             </p>
           </section>
-         {status && <p className="text-white text-xl border-blue p-2 bg-blue">{status}</p>}
+          {status && (
+            <p className="text-white text-xl border-blue p-2 bg-blue">
+              {status}
+            </p>
+          )}
         </form>
       )}
     </>
