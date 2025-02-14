@@ -53,7 +53,6 @@ export function ImageSlider({ images }: ImageSliderProps) {
         }}
       >
         {images.map(({ url, alt }, index) => (
-          <>
             <Image
               key={url as any}
               src={url}
@@ -62,7 +61,6 @@ export function ImageSlider({ images }: ImageSliderProps) {
               className="img-slider-img"
               style={{ translate: `${-100 * imageIndex}%` }}
             />
-          </>
         ))}
         <div
           style={{
@@ -73,7 +71,6 @@ export function ImageSlider({ images }: ImageSliderProps) {
           }}
         >
           {images.map(({ alt, titleUrl }, index) => (
-            <>
               <Image
                 key={titleUrl as any}
                 src={titleUrl}
@@ -82,7 +79,6 @@ export function ImageSlider({ images }: ImageSliderProps) {
                 className="img-slider-img"
                 style={{ translate: `${-100 * imageIndex}%` }}
               />
-            </>
           ))}
         </div>
       </div>
