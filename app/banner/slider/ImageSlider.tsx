@@ -54,7 +54,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
       >
         {images.map(({ url, alt }, index) => (
             <Image
-              key={url as any}
+              key={index as any}
               src={url}
               alt={alt}
               aria-hidden={imageIndex !== index}
@@ -72,7 +72,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
         >
           {images.map(({ alt, titleUrl }, index) => (
               <Image
-                key={titleUrl as any}
+                key={index as any}
                 src={titleUrl}
                 alt={alt}
                 aria-hidden={imageIndex !== index}
