@@ -39,7 +39,7 @@ export default function Form() {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     const formatedData = new FormData(formRef.current as HTMLFormElement);
 
-    const response = await fetch("/api/contact/route", {
+    const response = await fetch("/api/contact/", {
       method: "POST",
       body: formatedData,
     });
