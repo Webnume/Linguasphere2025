@@ -7,11 +7,11 @@ export default function ListCardMini() {
   return (
     <section className="flex flex-wrap md:flex-nowrap content-center justify-center gap-4 lg:justify-around lg:flex-row">
       {contentData.map(
-        (categorie) =>
+        (categorie, index) =>
           categorie.name !== "Expertises dans les domaines du droit" &&
           categorie.name !== "À propos" &&
           categorie.image && (
-            <article className="group sm:flex sm:flex-col sm:max-w-[280px] p-4 h-full hover:border hover:border-orange hover:border-1 hover:scale-105 transition ease-in-out items-center flex gap-4">
+            <article key={index} className="group sm:flex sm:flex-col sm:max-w-[280px] p-4 h-full hover:border hover:border-orange hover:border-1 hover:scale-105 transition ease-in-out items-center flex gap-4">
               {" "}
               <Link href={categorie.linkHref} key={categorie.name} className="flex flex-col items-center gap-4">
                 {/* <Image

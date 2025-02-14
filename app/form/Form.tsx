@@ -60,7 +60,7 @@ export default function Form() {
     if (watch("statut") === "particulier") {
       unregister("societe");
     }
-  }, [watch("statut"), unregister]);
+  }, [watch, unregister]);
 
   return (
     <>
@@ -235,22 +235,6 @@ export default function Form() {
               <strong>*</strong> Champs obligatoires.
             </p>
           </section>
-
-          {/* <div className="flex flex-col w-full lg:w-full">
-        <div
-          className="g-recaptcha"
-          data-sitekey="6LfbBnoUAAAAAF6SsDgMtl73_5lzZfrqLYc5-iAo"
-          data-callback="verifyRecaptchaCallback"
-          data-expired-callback="expiredRecaptchaCallback"
-        ></div>
-        <input
-          className="form-control d-none"
-          data-recaptcha="true"
-          required
-          data-error="Êtes-vous un robot ?"
-        />
-        <p className="text-orange">{errors.name?.message}</p>
-      </div> */}
         </form>
       )}
     </>
