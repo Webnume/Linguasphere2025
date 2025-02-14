@@ -2,18 +2,34 @@
 import { useForm, SubmitHandler, set } from "react-hook-form";
 import { useEffect, useRef, useState } from "react";
 
+type Inputs = {
+  statut: string;
+  societe: string;
+  name: string;
+  surname: string;
+  email: string;
+  phone: string;
+  message: string;
+};
+
 export default function Form() {
   const [message, setMessage] = useState<string>("");
 
-  type Inputs = {
-    statut: string;
-    societe: string;
-    name: string;
-    surname: string;
-    email: string;
-    phone: string;
-    message: string;
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  const [formData, setFormData] = useState({
+    statut: "",
+    societe: "",
+    name: "",
+    surname: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
   const {
     register,
@@ -23,31 +39,36 @@ export default function Form() {
     reset,
     formState: { errors },
   } = useForm<Inputs>({
-    defaultValues: {
-      statut: "",
-      societe: "",
-      name: "",
-      surname: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
+    defaultValues: formData,
   });
   // const form = document.getElementById("contact_form") as HTMLFormElement;
   const formRef = useRef<HTMLFormElement>(null);
 
-  const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    const formatedData = new FormData(formRef.current as HTMLFormElement);
+  const onSubmit = async (e) => {
+    // e.preventDefault();
+    setStatus("Envoi en cours ...");
 
     const response = await fetch("/api/contact/", {
       method: "POST",
-      body: formatedData,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
     });
-    setMessage(
-      "Votre message a bien été envoyé. Nous vous recontacterons dans les plus brefs délais. Merci !"
-    );
-    const formData = await response.text();
-    // reset();
+
+    const result = await response.json();
+    
+
+    if (result.status === "OK") {
+      setStatus("Votre message a bien été envoyé. Nous vous recontacterons dans les plus brefs délais. Merci !");
+      setFormData({ statut: "",
+        societe: "",
+        name: "",
+        surname: "",
+        email: "",
+        phone: "",
+        message: ""});
+    } else {
+      setStatus("Echec d'envoi de l'email");
+    }
   };
 
   // console.log(watch("societe")); // watch input value by passing the name of it
