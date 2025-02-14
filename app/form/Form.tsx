@@ -23,7 +23,7 @@ export default function Form() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<Inputs>({
     statut: "",
     societe: "",
     name: "",
