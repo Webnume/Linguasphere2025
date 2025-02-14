@@ -8,9 +8,18 @@ if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
 }
 
 export async function POST(req: NextRequest) {
-  const { name, email, message } = await req.json();
+  const { statut, societe, name, surname, email, phone, message } =
+    await req.json();
 
-  if (!name || !email || !message) {
+  if (
+    !statut ||
+    !societe ||
+    !name ||
+    !surname ||
+    !email ||
+    !phone ||
+    !message
+  ) {
     return NextResponse.json(
       { status: "Bad Request", message: "Missing required fields" },
       { status: 400 }
