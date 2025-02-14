@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
       html: `${message}`,
     };
 
-    const info = await transporter.sendMail(mailData);
+    await transporter.sendMail(mailData);
 
     return NextResponse.json({ status: "OK" }, { status: 200 });
   } catch (error) {
