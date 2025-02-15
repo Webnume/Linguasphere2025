@@ -56,12 +56,12 @@ export async function POST(req: NextRequest) {
       subject: `New Contact Form Submission from ${name}`,
       text: message,
       html: `
-      Statut : ${statut}\n
-      Societe ou association : ${societe}\n
-      Name : ${name}\n
-      Surname : ${surname}\n
-      Email : ${email}\n
-      Phone : ${phone}\n
+      Statut : ${statut} "\n"
+      Societe ou association : ${societe} "\n"
+      Name : ${name} "\n"
+      Surname : ${surname} "\n"
+      Email : ${email} "\n"
+      Phone : ${phone} "\n"
       Message : ${message}
       `,
     };
