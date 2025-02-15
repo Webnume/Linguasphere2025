@@ -53,15 +53,15 @@ export async function POST(req: NextRequest) {
       from: process.env.EMAIL_USER,
       replyTo: email,
       to: process.env.EMAIL_USER,
-      subject: `New Contact Form Submission from ${name}`,
+      subject: `Formulaire de contact LinguaSphere`,
       text: message,
       html: `
       Statut : ${statut} <br>
       Societe ou association : ${societe} <br>
-      Name : ${name} <br>
-      Surname : ${surname} <br>
+      Nom : ${name} <br>
+      Prénom : ${surname} <br>
       Email : ${email} <br>
-      Phone : ${phone} <br>
+      Tel : ${phone} <br>
       Message : ${message}
       `,
     };

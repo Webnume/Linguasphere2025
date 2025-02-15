@@ -59,9 +59,7 @@ export default function Form() {
     console.log(data);
 
     if (result.status === "OK") {
-      setStatus(
-        "Votre message a bien été envoyé. Merci !"
-      );
+      setStatus("Votre message a bien été envoyé. Merci !");
       reset({
         statut: "",
         societe: "",
