@@ -60,7 +60,7 @@ export default function Form() {
 
     if (result.status === "OK") {
       setStatus(
-        "Votre message a bien été envoyé. Nous vous recontacterons dans les plus brefs délais. Merci !"
+        "Votre message a bien été envoyé. Merci !"
       );
       reset({
         statut: "",
