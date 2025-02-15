@@ -55,7 +55,15 @@ export async function POST(req: NextRequest) {
       to: process.env.EMAIL_USER,
       subject: `New Contact Form Submission from ${name}`,
       text: message,
-      html: `${message}`,
+      html: `
+      Statut : ${statut}/n
+      Societe ou association : ${societe}/n
+      Name : ${name}/n
+      Surname : ${surname}/n
+      Email : ${email}/n
+      Phone : ${phone}/n
+      Message : ${message}
+      `,
     };
 
     await transporter.sendMail(mailData);
