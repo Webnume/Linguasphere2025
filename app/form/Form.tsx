@@ -130,7 +130,9 @@ export default function Form() {
                         })}
                         id="inlineRadio1"
                         value="particulier"
-                        onChange={handleChange}
+                        // onChange={handleChange}
+                        // value ={formData.statut}
+                        // name="statut"
                       />
                       <label htmlFor="inlineRadio1" className="font-normal m-2">
                         Un particulier
@@ -143,7 +145,9 @@ export default function Form() {
                         })}
                         id="inlineRadio2"
                         value="entreprise"
-                        onChange={handleChange}
+                        // onChange={handleChange}
+                        // value ={formData.statut}
+                        // name="statut"
                       />
                       <label className="font-normal m-2" htmlFor="inlineRadio2">
                         Une entreprise
@@ -156,7 +160,9 @@ export default function Form() {
                         })}
                         id="inlineRadio3"
                         value="association"
-                        onChange={handleChange}
+                        // onChange={handleChange}
+                        // value ={formData.statut}
+                        // name="statut"
                       />
                       <label className="font-normal m-2" htmlFor="inlineRadio3">
                         Une association
@@ -179,7 +185,7 @@ export default function Form() {
                       })}
                       className="form-control"
                       placeholder={`Mon ${watch("statut")} *`}
-                      onChange={handleChange}
+                      // onChange={handleChange}
                     />
                   </div>
                 )}
@@ -191,7 +197,7 @@ export default function Form() {
                     {...register("name", { required: "Nom obligatoire." })}
                     className="form-control"
                     placeholder="ex : Dupont *"
-                    onChange={handleChange}
+                    // onChange={handleChange}
                   />
                   <p className="text-orange">{errors.name?.message}</p>
                 </div>
@@ -206,7 +212,7 @@ export default function Form() {
                     })}
                     className="form-control"
                     placeholder="ex : Camille *"
-                    onChange={handleChange}
+                    // onChange={handleChange}
                   />
                   <p className="text-orange">{errors.surname?.message}</p>
                 </div>
@@ -223,7 +229,7 @@ export default function Form() {
                     })}
                     className="form-control"
                     placeholder="ex : monmail@gmail.com * "
-                    onChange={handleChange}
+                    // onChange={handleChange}
                   />
                   <p className="text-orange">{errors.email?.message}</p>
                 </div>
@@ -240,7 +246,7 @@ export default function Form() {
                     })}
                     className="form-control"
                     placeholder="ex : 0411934472"
-                    onChange={handleChange}
+                    // onChange={handleChange}
                   />
                   <p className="text-orange">{errors.phone?.message}</p>
                 </div>
@@ -253,7 +259,7 @@ export default function Form() {
                 {...register("message", { required: "Message obligatoire." })}
                 className="border-blue  min-h-[420px]"
                 placeholder="Indiquez votre demande *"
-                onChange={handleChange}
+                // onChange={handleChange}
                 rows={10}
               ></textarea>
               <p className="text-orange">{errors.message?.message}</p>
