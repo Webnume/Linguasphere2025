@@ -131,7 +131,7 @@ export default function Form() {
                         })}
                         id="inlineRadio1"
                         value="particulier"
-                        onChange={handleChange}
+                        // onChange={handleChange}
                         // value ={formData.statut}
                         // name="statut"
                       />
@@ -146,7 +146,7 @@ export default function Form() {
                         })}
                         id="inlineRadio2"
                         value="entreprise"
-                        onChange={handleChange}
+                        // onChange={handleChange}
                         // value ={formData.statut}
                         // name="statut"
                       />
@@ -161,7 +161,7 @@ export default function Form() {
                         })}
                         id="inlineRadio3"
                         value="association"
-                        onChange={handleChange}
+                        // onChange={handleChange}
                         // value ={formData.statut}
                         // name="statut"
                       />
