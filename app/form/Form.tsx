@@ -46,7 +46,7 @@ export default function Form() {
   // const form = document.getElementById("contact_form") as HTMLFormElement;
   const formRef = useRef<HTMLFormElement>(null);
 
-  const onSubmit = async () => {
+  const onSubmit = async (e: any) => {
     // e.preventDefault();
     setStatus("Envoi en cours ...");
 
@@ -58,6 +58,7 @@ export default function Form() {
 
     const result = await response.json();
     console.log(result);
+    console.log(formData);
 
     if (result.status === "OK") {
       setStatus(
@@ -130,7 +131,7 @@ export default function Form() {
                         })}
                         id="inlineRadio1"
                         value="particulier"
-                        // onChange={handleChange}
+                        onChange={handleChange}
                         // value ={formData.statut}
                         // name="statut"
                       />
@@ -145,7 +146,7 @@ export default function Form() {
                         })}
                         id="inlineRadio2"
                         value="entreprise"
-                        // onChange={handleChange}
+                        onChange={handleChange}
                         // value ={formData.statut}
                         // name="statut"
                       />
@@ -160,7 +161,7 @@ export default function Form() {
                         })}
                         id="inlineRadio3"
                         value="association"
-                        // onChange={handleChange}
+                        onChange={handleChange}
                         // value ={formData.statut}
                         // name="statut"
                       />
@@ -185,7 +186,7 @@ export default function Form() {
                       })}
                       className="form-control"
                       placeholder={`Mon ${watch("statut")} *`}
-                      // onChange={handleChange}
+                      onChange={handleChange}
                     />
                   </div>
                 )}
@@ -197,7 +198,7 @@ export default function Form() {
                     {...register("name", { required: "Nom obligatoire." })}
                     className="form-control"
                     placeholder="ex : Dupont *"
-                    // onChange={handleChange}
+                    onChange={handleChange}
                   />
                   <p className="text-orange">{errors.name?.message}</p>
                 </div>
@@ -212,7 +213,7 @@ export default function Form() {
                     })}
                     className="form-control"
                     placeholder="ex : Camille *"
-                    // onChange={handleChange}
+                    onChange={handleChange}
                   />
                   <p className="text-orange">{errors.surname?.message}</p>
                 </div>
@@ -229,7 +230,7 @@ export default function Form() {
                     })}
                     className="form-control"
                     placeholder="ex : monmail@gmail.com * "
-                    // onChange={handleChange}
+                    onChange={handleChange}
                   />
                   <p className="text-orange">{errors.email?.message}</p>
                 </div>
@@ -246,7 +247,7 @@ export default function Form() {
                     })}
                     className="form-control"
                     placeholder="ex : 0411934472"
-                    // onChange={handleChange}
+                    onChange={handleChange}
                   />
                   <p className="text-orange">{errors.phone?.message}</p>
                 </div>
@@ -259,7 +260,7 @@ export default function Form() {
                 {...register("message", { required: "Message obligatoire." })}
                 className="border-blue  min-h-[420px]"
                 placeholder="Indiquez votre demande *"
-                // onChange={handleChange}
+                onChange={handleChange}
                 rows={10}
               ></textarea>
               <p className="text-orange">{errors.message?.message}</p>
