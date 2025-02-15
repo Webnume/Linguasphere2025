@@ -60,7 +60,7 @@ export async function POST(req: NextRequest) {
       Societe ou association : ${societe} <br>
       Nom : ${name} <br>
       Prénom : ${surname} <br>
-      Email : ${email} <br>
+      Email : <a href="mailto:${email}" >${email}</a> <br>
       Tel : ${phone} <br>
       Message : ${message}
       `,
