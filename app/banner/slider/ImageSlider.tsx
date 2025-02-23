@@ -17,7 +17,7 @@ type ImageSliderProps = {
 
 export function ImageSlider({
   images,
-  autoplayInterval = 6000,
+  autoplayInterval = 3000,
 }: ImageSliderProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const [isUserInteracted, setIsUserInteracted] = useState(false);
@@ -46,18 +46,7 @@ export function ImageSlider({
   function handleUserInteraction() {
     setIsUserInteracted(true);
   }
-  @keyframes slideInFromTop {
-    0% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  .img-slider-title-img {
-    animation: slideInFromTop 1s ease-in-out;
-  }
+
   return (
     <section
       aria-label="Image Slider"
