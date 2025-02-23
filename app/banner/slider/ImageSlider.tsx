@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import { FaRegCircle, FaRegDotCircle } from "react-icons/fa";
 import { StaticImageData } from "next/image";
@@ -12,10 +12,12 @@ type ImageSliderProps = {
     alt: string;
     titleUrl: StaticImageData;
   }[];
+  autoplayInterval?: number; // Optional prop for autoplay interval
 };
 
-export function ImageSlider({ images }: ImageSliderProps) {
+export function ImageSlider({ images, autoplayInterval = 3000 }: ImageSliderProps) {
   const [imageIndex, setImageIndex] = useState(0);
+  const [isUserInteracted, setIsUserInteracted] = useState(false);
 
   function showNextImage() {
     setImageIndex((index) => {
@@ -31,6 +33,17 @@ export function ImageSlider({ images }: ImageSliderProps) {
     });
   }
 
+  useEffect(() => {
+    if (isUserInteracted) return;
+
+    const interval = setInterval(showNextImage, autoplayInterval);
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [autoplayInterval, isUserInteracted]);
+
+  function handleUserInteraction() {
+    setIsUserInteracted(true);
+  }
+
   return (
     <section
       aria-label="Image Slider"
@@ -40,6 +53,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
         position: "relative",
         maxHeight: "450px",
       }}
+      onClick={handleUserInteraction}
     >
       <a href="#after-image-slider-controls" className="skip-link">
         Skip Image Slider Controls
@@ -64,7 +78,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
         ))}
         <div
           style={{
-            width: "35%",
+            width: "50%",
             display: "flex",
             overflow: "hidden",
             position: "absolute",
