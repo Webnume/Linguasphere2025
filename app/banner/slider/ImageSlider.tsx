@@ -128,7 +128,7 @@ export function ImageSlider({
         }}
       >
         {images.map((_, index) => (
-          <button
+          <span
             key={index}
             className="img-slider-dot-btn"
             aria-label={`View Image ${index + 1}`}
@@ -139,7 +139,7 @@ export function ImageSlider({
             ) : (
               <FaRegCircle aria-hidden />
             )}
-          </button>
+          </span>
         ))}
       </div>
       <div id="after-image-slider-controls" />
