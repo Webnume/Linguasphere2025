@@ -87,15 +87,16 @@ export function ImageSlider({
             position: "absolute",
             right: "10rem",
             top: "1rem",
+            paddingBottom: "1rem",
           }}
         >
-          {images.map(({ alt, titleUrl }, index) => (
+          {images.map(({ alt, titleUrl }: { alt: string; titleUrl: StaticImageData }, index: number) => (
             <Image
               key={index as any}
               src={titleUrl}
               alt={alt}
               aria-hidden={imageIndex !== index}
-              className="img-slider-img"
+              className="img-slider-img animate-bounce-vertical"
               style={{ translate: `${-100 * imageIndex}%`, width: "100%" }}
             />
           ))}
