@@ -17,7 +17,7 @@ type ImageSliderProps = {
 
 export function ImageSlider({
   images,
-  autoplayInterval = 3000,
+  autoplayInterval = 6000,
 }: ImageSliderProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const [isUserInteracted, setIsUserInteracted] = useState(false);
