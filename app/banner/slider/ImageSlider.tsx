@@ -15,7 +15,10 @@ type ImageSliderProps = {
   autoplayInterval?: number; // Optional prop for autoplay interval
 };
 
-export function ImageSlider({ images, autoplayInterval = 3000 }: ImageSliderProps) {
+export function ImageSlider({
+  images,
+  autoplayInterval = 6000,
+}: ImageSliderProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const [isUserInteracted, setIsUserInteracted] = useState(false);
 
@@ -43,7 +46,18 @@ export function ImageSlider({ images, autoplayInterval = 3000 }: ImageSliderProp
   function handleUserInteraction() {
     setIsUserInteracted(true);
   }
-
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .img-slider-title-img {
+    animation: slideInFromTop 1s ease-in-out;
+  }
   return (
     <section
       aria-label="Image Slider"
@@ -67,14 +81,14 @@ export function ImageSlider({ images, autoplayInterval = 3000 }: ImageSliderProp
         }}
       >
         {images.map(({ url, alt }, index) => (
-            <Image
-              key={index as any}
-              src={url}
-              alt={alt}
-              aria-hidden={imageIndex !== index}
-              className="img-slider-img"
-              style={{ translate: `${-100 * imageIndex}%` }}
-            />
+          <Image
+            key={index as any}
+            src={url}
+            alt={alt}
+            aria-hidden={imageIndex !== index}
+            className="img-slider-img"
+            style={{ translate: `${-100 * imageIndex}%` }}
+          />
         ))}
         <div
           style={{
@@ -87,14 +101,14 @@ export function ImageSlider({ images, autoplayInterval = 3000 }: ImageSliderProp
           }}
         >
           {images.map(({ alt, titleUrl }, index) => (
-              <Image
-                key={index as any}
-                src={titleUrl}
-                alt={alt}
-                aria-hidden={imageIndex !== index}
-                className="img-slider-img"
-                style={{ translate: `${-100 * imageIndex}%` , width: "100%" }}
-              />
+            <Image
+              key={index as any}
+              src={titleUrl}
+              alt={alt}
+              aria-hidden={imageIndex !== index}
+              className="img-slider-img"
+              style={{ translate: `${-100 * imageIndex}%`, width: "100%" }}
+            />
           ))}
         </div>
       </div>

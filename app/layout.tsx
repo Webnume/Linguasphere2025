@@ -116,12 +116,12 @@ jQuery(document).ready(function( $ ) {
 });
 </script> */}
 
-        <Image
+        {/* <Image
           src="/images/_f97c3806-d885-4769-817b-34cd2d0d2349.jpg"
           alt="ordinateur"
           width={250}
           height={250}
-        />
+        /> */}
         <Footer />
         <ScrollToTop />
       </body>
