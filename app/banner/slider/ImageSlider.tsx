@@ -64,10 +64,12 @@ export function ImageSlider({ images }: ImageSliderProps) {
         ))}
         <div
           style={{
-            width: "55%",
+            width: "35%",
             display: "flex",
             overflow: "hidden",
             position: "absolute",
+            right: "10rem",
+            top: "1rem",
           }}
         >
           {images.map(({ alt, titleUrl }, index) => (
@@ -77,7 +79,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
                 alt={alt}
                 aria-hidden={imageIndex !== index}
                 className="img-slider-img"
-                style={{ translate: `${-100 * imageIndex}%` }}
+                style={{ translate: `${-100 * imageIndex}%` , width: "100%" }}
               />
           ))}
         </div>
