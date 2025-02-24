@@ -90,7 +90,7 @@ export default function RootLayout({
       <body
         className={`${inter.className}  flex flex-col items-center min-h-screen mx-auto text-gray-700 bg-white`}
       >
-        <Script
+        {/* <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-7T66M5FPCY`}
           strategy="afterInteractive"
         />
@@ -101,7 +101,7 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-7T66M5FPCY');
           `}
-        </Script>
+        </Script> */}
         <Header />
         <main className="w-full flex flex-col items-center">{children}</main>
 
