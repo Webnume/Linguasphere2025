@@ -14,11 +14,11 @@ const config: Config = {
       gray: {
         100: "#f7fafc",
         200: "#ececec",
-        700:"#333",
+        700: "#333",
         900: "#1a202c",
       },
-      orange:"#E85F0C",
-      blue:"#00679A"
+      orange: "#E85F0C",
+      blue: "#00679A",
     },
     extend: {
       backgroundImage: {
@@ -27,13 +27,13 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       keyframes: {
-        'bounce-vertical': {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(10px)' },
+        "bounce-vertical": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(10px)" },
         },
       },
       animation: {
-        'bounce-vertical': 'bounce-vertical 2s infinite',
+        "bounce-vertical": "bounce-vertical 2s infinite",
       },
     },
   },

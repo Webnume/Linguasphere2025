@@ -225,8 +225,7 @@ export const contentData = [
               <H2 withIcon={"IoMicCircleSharp"}>Votre demande</H2>
               <p>
                 <b>Faire traduire</b> en <b>français</b> un texte juridique
-                rédigé en <b>anglais</b>
-                ou en <b>espagnol</b>.
+                rédigé en <b>anglais</b> ou en <b>espagnol</b>.
               </p>
               <Link
                 href={"expertises-dans-les-domaines-du-droit/"}
@@ -241,8 +240,7 @@ export const contentData = [
                 <b>Transposer</b> et <b>adapter</b> un <b>système</b> et une{" "}
                 <b>culture juridiques</b>, susceptibles de contenir des concepts
                 distincts ou inconnus du droit français, pour <b>restituer</b>{" "}
-                au mieux le <b>sens</b> et la <b>valeur</b> du
-                <b>texte</b> d’origine.
+                au mieux le <b>sens</b> et la <b>valeur</b> du <b>texte</b> d’origine.
               </p>
             </section>
             <section className="mb-10">
@@ -251,10 +249,8 @@ export const contentData = [
                 Une <b>démarche comparatiste</b>, une excellente{" "}
                 <b>connaissance</b> des
                 <b>métiers</b> du <b>droit</b> et de la <b>conformité</b> et de
-                leurs <b>enjeux</b>, une
-                <b>maîtrise</b> du <b>style juridique</b> et des{" "}
-                <b>ressources documentaires</b>
-                spécialisées.
+                leurs <b>enjeux</b>, une <b>maîtrise</b> du <b>style juridique</b> et des{" "}
+                <b>ressources documentaires</b> spécialisées.
               </p>
             </section>
             <section className="mb-10">
