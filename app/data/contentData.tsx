@@ -247,11 +247,8 @@ export const contentData = [
               <H2 withIcon={"MdDone"}>Nos atouts</H2>
               <p>
                 Une <b>démarche comparatiste</b>, une excellente{" "}
-                <b>connaissance</b> des
-                <b>métiers</b> du <b>droit</b> et de la <b>conformité</b> et de
-                leurs <b>enjeux</b>, une 
-                <b>maîtrise</b> du <b>style juridique</b> et des{" "}
-                <b>ressources documentaires</b> spécialisées.
+                <b>connaissance</b> des <b>métiers</b> du <b>droit</b> et de la <b>conformité</b> et de
+                leurs <b>enjeux</b>, une <b>maîtrise</b> du <b>style juridique</b> et des <b>ressources documentaires</b> spécialisées.
               </p>
             </section>
             <section className="mb-10">
