@@ -9,7 +9,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-
 const addStructuredDataJsonLd = () => {
   return {
     __html: `{
@@ -92,18 +91,6 @@ export default function RootLayout({
       <body
         className={`${inter.className}  flex flex-col items-center min-h-screen mx-auto text-gray-700 bg-white`}
       >
-        {/* <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-7T66M5FPCY`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-7T66M5FPCY');
-          `}
-        </Script> */}
         <GoogleAnalytics gaId="G-BZRVL5G0P2" />
         <Header />
         <main className="w-full flex flex-col items-center">{children}</main>
