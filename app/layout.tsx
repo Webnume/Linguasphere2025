@@ -7,6 +7,8 @@ import ScrollToTop from "./scrollToTop/ScrollToTop";
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 
 const addStructuredDataJsonLd = () => {
   return {
@@ -102,6 +104,7 @@ export default function RootLayout({
             gtag('config', 'G-7T66M5FPCY');
           `}
         </Script> */}
+        <GoogleAnalytics gaId="G-BZRVL5G0P2" />
         <Header />
         <main className="w-full flex flex-col items-center">{children}</main>
 
